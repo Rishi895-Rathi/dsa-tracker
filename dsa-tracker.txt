@@ -1,0 +1,14 @@
+question number 3120. Count the Number of Special Characters I 
+class Solution {
+    public int numberOfSpecialChars(String word) {
+        Set<Character> chars = new HashSet<>();
+        for (char c : word.toCharArray()) chars.add(c);
+        int count = 0;
+        for (char c = 'a'; c <= 'z'; c++) {
+            if (chars.contains(c) && chars.contains(Character.toUpperCase(c))){
+                count++;
+            }
+        }
+        return count;
+    }
+}
