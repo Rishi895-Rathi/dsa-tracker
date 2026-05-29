@@ -46,7 +46,7 @@ class Solution {
     }
 }
 *****************************************************************
-2540 minimum common value
+question number 2540. minimum common value
 class Solution {
     public int getCommon(int[] nums1, int[] nums2) {
         //with binary search
@@ -63,3 +63,28 @@ class Solution {
     }
 }
 ********************************************************************
+question number 3300. minimum element after replacement with digit sum
+class Solution {
+    public int minElement(int[] nums) {
+        
+        int ans = Integer.MAX_VALUE;
+        for(int num : nums){
+            int temp = digitSum(num);
+            if(ans > temp){
+                ans = temp;
+            }else{
+                continue;
+            }
+        }
+        return ans;
+    }
+    private int digitSum(int x){
+        int sum = 0;
+        while(x > 0){
+            sum += x % 10;
+            x /= 10;
+        }
+        return sum;
+    }
+}
+***********************************************************************
