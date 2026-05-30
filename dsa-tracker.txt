@@ -88,3 +88,42 @@ class Solution {
     }
 }
 ***********************************************************************
+question number 3093. Longest Common Suffix Queries
+class Solution {
+    public int[] stringIndices(String[] wordsContainer, String[] wordsQuery) {
+        TrieNode root = new TrieNode();
+        for (int i = 0; i < wordsContainer.length; i++) {
+            TrieNode node = root;
+            String word = wordsContainer[i];
+            if (node.bestIndex == -1 || word.length() < wordsContainer[node.bestIndex].length()) {
+                node.bestIndex = i;
+            }
+            for (int j = word.length() - 1; j >= 0; j--) {
+                int c = word.charAt(j) - 'a';
+                if (node.children[c] == null) node.children[c] = new TrieNode();
+                node = node.children[c];
+                if (node.bestIndex == -1 || word.length() < wordsContainer[node.bestIndex].length()) {
+                    node.bestIndex = i;
+                }
+            }
+        }
+        int[] result = new int[wordsQuery.length];
+        for (int i = 0; i < wordsQuery.length; i++) {
+            TrieNode node = root;
+            String query = wordsQuery[i];
+            for (int j = query.length() - 1; j >= 0; j--) {
+                int c = query.charAt(j) - 'a';
+                if (node.children[c] == null) break;
+                node = node.children[c];
+            }
+            result[i] = node.bestIndex;
+        }
+        return result;
+    }
+    static class TrieNode {
+        TrieNode[] children = new TrieNode[26];
+        int bestIndex = -1;
+    }
+}
+solved
+***************************************************************************
