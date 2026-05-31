@@ -127,3 +127,45 @@ class Solution {
 }
 solved
 ***************************************************************************
+question number 2126 Destrorying Asteroids
+class Solution {
+    public boolean asteroidsDestroyed(int mass, int[] asteroids) {
+        Arrays.sort(asteroids);
+        long mass1 = mass;
+        for(int i = 0; i < asteroids.length; i++){
+            if(mass1 >= asteroids[i]){
+                mass1 += asteroids[i];
+            }else{
+                return false;
+            }
+        }
+        return true;
+    }
+}
+***************************************************************************
+question number 2553 Seoerate the Digit in an Array
+class Solution {
+    public int[] separateDigits(int[] nums) {
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int num : nums){
+            int divisor = 1;
+            while(num / divisor >= 10) {
+                divisor *= 10;
+            }
+            while(divisor > 0) {
+                int digit = num / divisor;
+                list.add(digit);
+                num %= divisor;
+                divisor /= 10;
+            }
+        }
+        int[] arr = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            arr[i] = list.get(i);
+        }
+        return arr;
+    }
+}
+*************************************************************************
+question number 
