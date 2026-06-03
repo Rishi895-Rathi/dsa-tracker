@@ -192,4 +192,130 @@ class Solution {
     }
 }
 ****************************************************************************
-question number 
+question number 3635 Earliest Finish Time for Land and Water RIdes II
+
+class Solution {
+
+    public int earliestFinishTime(int[] landStartTime, int[] landDuration,
+                                  int[] waterStartTime, int[] waterDuration) {
+
+        int n = landStartTime.length;
+        int m = waterStartTime.length;
+
+        int ans = Integer.MAX_VALUE;
+
+        // preprocess water rides
+        int[][] water = new int[m][2];
+        for (int i = 0; i < m; i++) {
+            water[i][0] = waterStartTime[i];
+            water[i][1] = waterDuration[i];
+        }
+
+        Arrays.sort(water, Comparator.comparingInt(a -> a[0]));
+
+        int[] waterStarts = new int[m];
+        int[] waterPrefixDur = new int[m];
+        int[] waterSuffixFinish = new int[m];
+
+        for (int i = 0; i < m; i++) {
+            waterStarts[i] = water[i][0];
+        }
+
+        waterPrefixDur[0] = water[0][1];
+        for (int i = 1; i < m; i++) {
+            waterPrefixDur[i] = Math.min(waterPrefixDur[i - 1], water[i][1]);
+        }
+
+        waterSuffixFinish[m - 1] = water[m - 1][0] + water[m - 1][1];
+        for (int i = m - 2; i >= 0; i--) {
+            waterSuffixFinish[i] =
+                Math.min(waterSuffixFinish[i + 1],
+                         water[i][0] + water[i][1]);
+        }
+
+        // Land -> Water
+        for (int i = 0; i < n; i++) {
+
+            int landFinish = landStartTime[i] + landDuration[i];
+
+            int idx = lowerBound(waterStarts, landFinish);
+
+            int best = Integer.MAX_VALUE;
+
+            if (idx < m)
+                best = Math.min(best, waterSuffixFinish[idx]);
+
+            if (idx > 0)
+                best = Math.min(best,
+                                landFinish + waterPrefixDur[idx - 1]);
+
+            ans = Math.min(ans, best);
+        }
+
+        // preprocess land rides
+        int[][] land = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            land[i][0] = landStartTime[i];
+            land[i][1] = landDuration[i];
+        }
+
+        Arrays.sort(land, Comparator.comparingInt(a -> a[0]));
+
+        int[] landStarts = new int[n];
+        int[] landPrefixDur = new int[n];
+        int[] landSuffixFinish = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            landStarts[i] = land[i][0];
+        }
+
+        landPrefixDur[0] = land[0][1];
+        for (int i = 1; i < n; i++) {
+            landPrefixDur[i] = Math.min(landPrefixDur[i - 1], land[i][1]);
+        }
+
+        landSuffixFinish[n - 1] = land[n - 1][0] + land[n - 1][1];
+        for (int i = n - 2; i >= 0; i--) {
+            landSuffixFinish[i] =
+                Math.min(landSuffixFinish[i + 1],
+                         land[i][0] + land[i][1]);
+        }
+
+        // Water -> Land
+        for (int j = 0; j < m; j++) {
+
+            int waterFinish = waterStartTime[j] + waterDuration[j];
+
+            int idx = lowerBound(landStarts, waterFinish);
+
+            int best = Integer.MAX_VALUE;
+
+            if (idx < n)
+                best = Math.min(best, landSuffixFinish[idx]);
+
+            if (idx > 0)
+                best = Math.min(best,
+                                waterFinish + landPrefixDur[idx - 1]);
+
+            ans = Math.min(ans, best);
+        }
+
+        return ans;
+    }
+
+    private int lowerBound(int[] arr, int target) {
+        int l = 0, r = arr.length;
+
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+
+            if (arr[mid] < target)
+                l = mid + 1;
+            else
+                r = mid;
+        }
+
+        return l;
+    }
+}
+*****************************************************************************
