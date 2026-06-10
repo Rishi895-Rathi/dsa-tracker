@@ -380,3 +380,34 @@ class Solution {
     }
 }
 **************************************************************************
+question number 3691 haed version of above one
+
+class Solution {
+    public long maxTotalValue(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int mx = nums[i];
+            int mn = nums[i];
+            for (int j = i; j < nums.length; j++) {
+                mx = Math.max(mx, nums[j]);
+                mn = Math.min(mn, nums[j]);
+                int val = mx - mn;
+                if (pq.size() < k) {
+                    pq.offer(val);
+                } else if (val > pq.peek()) {
+                    pq.poll();
+                    pq.offer(val);
+                }
+            }
+        }
+        long ans = 0;
+        while (!pq.isEmpty()) {
+            ans += pq.poll();
+        }
+        return ans;
+    }
+}
+not solved yet
+*****************************************************************************
+question number
