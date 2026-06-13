@@ -680,4 +680,20 @@ LOG = Number of power-of-two jump levels needed.
 Binary Lifting = Store 2^k-th ancestors and use them to move up the tree in O(log n) time instead of O(n).
 
 ************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+question number 3838. Weighted Word Mapping
+class Solution {
+    public String mapWordWeights(String[] words, int[] weights) {
+        StringBuilder ans = new StringBuilder();
+        for(String wrods : words){
+            int sum = 0;
+            for(char c : wrods.toCharArray()){
+                sum += weights[c - 'a'];
+            }
+            int rem = sum % 26;
+            ans.append((char)('z' - rem));
+        }
+        return ans.toString();
+    }
+}
+************************************************************************************************************************************************
 question number 
