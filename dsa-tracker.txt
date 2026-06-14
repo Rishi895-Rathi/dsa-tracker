@@ -696,4 +696,61 @@ class Solution {
     }
 }
 ************************************************************************************************************************************************
+question number 2130. Maximum Twin Sum of a Linked List
+
+approach one 
+
+class Solution {
+    public int pairSum(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+        int ans = 0;
+        if(head.next.next == null){
+            return (int)(head.val + head.next.val);
+        }
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode prev = null;
+        while(slow != null){
+            ListNode temp = slow.next;
+            slow.next = prev;
+            prev = slow;
+            slow = temp;
+        }
+        ListNode one = head;
+        ListNode two = prev;
+        while(two != null){
+            ans = Math.max(ans , (one.val + two.val));
+            one = one.next;
+            two = two.next;
+        }
+        return ans;
+    }
+}
+
+
+approach two
+
+ArrayList<Integer> list = new ArrayList<>();
+
+while(head != null){
+    list.add(head.val);
+    head = head.next;
+}
+
+int ans = 0;
+
+int left = 0;
+int right = list.size()-1;
+
+while(left < right){
+
+    ans = Math.max(ans, list.get(left)+list.get(right));
+
+    left++;
+    right--;
+}
+********************************************************************************************************************************************
 question number 
