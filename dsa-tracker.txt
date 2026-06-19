@@ -884,3 +884,15 @@ class Solution {
     }
 }
 ****************************************************************************************************************************************************
+question number 1732 Find the Highest Altitude
+class Solution {
+    public int largestAltitude(int[] gain) {
+        int maxaltitude = 0 , altitude = 0;
+        for(int i : gain){
+            altitude += i;
+            maxaltitude = Math.max(maxaltitude , altitude);
+        }
+        return maxaltitude;
+    }
+}
+*****************************************************************************************************************************************************************************************************************************
