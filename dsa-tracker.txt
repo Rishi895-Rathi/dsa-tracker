@@ -990,4 +990,27 @@ class Solution {
     }
 }
 *****************************************************************************************************************************************************
+question number 1833. Maximum Ice Cream Bars
+class Solution {
+    public int maxIceCream(int[] costs, int coins) {
+        int max = 0;
+        for(int cost : costs){
+            max = Math.max(cost , max);
+        }
+        int[] pricecount = new int[max + 1];
+        for(int cost : costs){
+            pricecount[cost]++;
+        }
+        int ans = 0;
+        for(int rs = 0; rs <= max; rs++){
+            while(pricecount[rs] > 0 && coins >= rs){
+                coins -= rs;
+                ans++;
+                pricecount[rs]--;
+            }
+        }
+        return ans;
+    }
+}
+*****************************************************************************
 question number 
