@@ -1013,4 +1013,42 @@ class Solution {
     }
 }
 *****************************************************************************
-question number 
+question number 1189. Maximum Number of Balloons
+class Solution {
+    public int maxNumberOfBalloons(String text) {
+        int ans = 0, b = 0, a = 0, l = 0, o = 0, n = 0;
+        for(char c : text.toCharArray()){
+        switch(c){
+            case 'b':
+                b++;
+                break;
+            case 'a':
+                a++;
+                break;
+            case 'l':
+                l++;
+                break;
+            case 'o':
+                o++;
+                break;
+            case 'n':
+                n++;
+                break;
+            }
+        }ans = Math.min(b , l/2);
+        ans = Math.min(ans ,  o/2);
+        ans = Math.min(ans , a);
+        ans = Math.min(ans, n);
+        return ans;   
+    }
+}
+**************************
+approach two 
+HashMap<Character, Integer> map = new HashMap<>();
+
+for(char c : text.toCharArray()){
+    if(c == 'b' || c == 'a' || c == 'l' || c == 'o' || c == 'n'){
+        map.put(c, map.getOrDefault(c, 0) + 1);
+    }
+}
+*****************************************************************************
