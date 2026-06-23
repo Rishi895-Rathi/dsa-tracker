@@ -1071,5 +1071,89 @@ class Solution {
         return dp[m - 1][n - 1];
     }
 }
-****************************************************************************
-question number 
+**************************************************************************** 
+question number 3699. Number of ZigZag Arrays I 
+ **************************my approach which prove tle need to optimize it******************************************
+class Solution {
+    long MOD = 1000000007L;
+    long[][][] dp;
+
+    public int zigZagArrays(int n, int l, int r) {
+        dp = new long[n][r - l + 1][3];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < r - l + 1; j++){
+                Arrays.fill(dp[i][j], -1);
+            }
+        }
+        long ans = solve(0, -1, -1, n, l, r);
+        return (int)(ans % MOD);
+    }
+
+    private long solve(int i, int lastvalue, int dir, int n, int l, int r) {
+        if(i == n) return 1;
+        int d = dir + 1;
+        long count = 0;
+        if(lastvalue != -1 && dp[i][lastvalue - l][d] != -1){
+            return dp[i][lastvalue - l][d];
+        }
+        for(int next = l; next <= r; next++){
+            if(lastvalue == -1){
+                count = (count + solve(i + 1, next, -1, n, l, r)) % MOD;
+            }
+            else if(dir == -1){
+                if(next == lastvalue) continue;
+
+                if(next > lastvalue){
+                    count = (count + solve(i + 1, next, 1, n, l, r)) % MOD;
+                }
+                else{
+                    count = (count + solve(i + 1, next, 0, n, l, r)) % MOD;
+                }
+            }
+            else if(dir == 1){
+                if(next < lastvalue){
+                    count = (count + solve(i + 1, next, 0, n, l, r)) % MOD;
+                }
+            }
+            else{
+                if(next > lastvalue){
+                    count = (count + solve(i + 1, next, 1, n, l, r)) % MOD;
+                }
+            }
+        }
+        if(lastvalue != -1){
+            dp[i][lastvalue - l][d] = count;
+        }
+        return count;
+    }
+}
+******************************optimized approach***************************************
+class Solution {
+    public int zigZagArrays(int n, int l, int r) {
+        int MOD = 1_000_000_007;
+        r -= l;
+        int[] dp = new int[r + 1];
+        Arrays.fill(dp, 1);
+        for (int i = 1; i < n; i++) {
+            int pre = 0, pre2;
+            if ((i & 1) == 1) {
+                for (int v = 0; v <= r; v++) {
+                    pre2 = pre + dp[v];
+                    dp[v] = pre;
+                    pre = pre2 % MOD;
+                }
+            } else {
+                for (int v = r; v >= 0; v--) {
+                    pre2 = pre + dp[v];
+                    dp[v] = pre;
+                    pre = pre2 % MOD;
+                }
+            }
+        }
+        int res = 0;
+        for (int v : dp) res = (res + v) % MOD;
+        return res * 2 % MOD;
+    }
+}
+finally solved
+*****************************************************************************************************************************************************
