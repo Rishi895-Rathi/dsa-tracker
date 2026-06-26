@@ -1182,3 +1182,27 @@ class Solution {
     }
 }
 *****************************************************************************
+questio number 3739 Count Subarray with Majority Element II
+class Solution {
+    public long countMajoritySubarrays(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+        int cumSum = 0;
+        long res = 0;
+        long cntLess = 0;
+        for (int num : nums) {
+            int prev = cumSum;
+            cumSum += (num == target) ? 1 : -1;
+            if (cumSum > prev) {
+                cntLess += map.getOrDefault(prev, 0);
+            } else if (cumSum < prev) {
+                cntLess -= map.getOrDefault(cumSum, 0);
+            }
+            res += cntLess;
+            map.put(cumSum, map.getOrDefault(cumSum, 0) + 1);
+        }
+        return res;
+    }
+}
+*****************************************************************************
+question number 
