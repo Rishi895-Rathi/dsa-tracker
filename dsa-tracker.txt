@@ -1205,4 +1205,35 @@ class Solution {
     }
 }
 *****************************************************************************
+question number 3020 Find the Maximum Number of Elements in the subset
+class Solution {
+    public int maximumLength(int[] nums) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int ans = 0;
+        for(int i : nums){
+           map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+
+        if (map.containsKey(1)) {
+            int ones = map.get(1);
+            if (ones % 2 == 0)
+                ans = ones - 1;
+            else
+                ans = ones;
+        }
+
+        for(int num : map.keySet()){
+            if(nums == 1)continue ;
+            int curr = num; 
+            int len = 1; 
+            while(map.containsKey(curr * curr) && map.get(curr) >= 2){
+                curr = curr * curr;
+                len += 2;
+            }
+            ans = Math.max(ans, len);
+        }
+        return ans;
+    }
+}
+****************************************************************************
 question number 
