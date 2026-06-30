@@ -1,4 +1,59 @@
-question number
+question number 
+***************************************************************************** 
+question number 1358. Number of Substrings Containing All Three Characters 
+
+with four approaches.........
+
+class Solution {
+    public int numberOfSubstrings(String s) {
+
+        int count = 0;
+        // brute force approach 
+        // for(int i = 0; i < s.length(); i++){
+        //     for(int j = i; j < s.length(); j++){
+        //         String c = s.substring(i, j + 1);
+        //         if(c.contains("a") && c.contains("b") && c.contains("c")){
+        //             count++;
+        //         }
+        //     }
+        // }
+
+        //approach two using frequency aaray
+        // for(int i = 0; i < s.length(); i++){
+        //     int[] freq = new int[3];
+        //     for(int j = i; j < s.length(); j++){
+        //         freq[s.charAt(j)-'a']++;
+        //         if(freq[0] > 0 && freq[1] > 0 && freq[2] > 0){
+        //             count++;
+        //         }
+        //     }
+        // }
+
+        //sliding window
+        // int[] freq = new int[3];
+        // int left = 0;
+        // for(int right = 0; right < s.length(); right++){
+        //     freq[s.charAt(right) - 'a']++;
+        //     while(freq[0] > 0 && freq[1] > 0 && freq[2] > 0){
+        //         count += s.length() - right;
+        //         freq[s.charAt(left) - 'a']--;
+        //         left++;
+        //     }
+        // }
+
+        //last occurance approach - fav one 
+        int[] last = {-1, -1, -1};
+        int ans = 0;
+        for(int i = 0; i < s.length(); i++){
+            last[s.charAt(i) - 'a'] = i;
+            if(last[0] != -1 && last[1] != -1 && last[2] != -1){
+                int min = Math.min(last[0], Math.min(last[1], last[2]));
+                count += min + 1;
+            }
+        }
+        return count;
+    }
+}
 *****************************************************************************
 question number 78. Subset
 class Solution {
