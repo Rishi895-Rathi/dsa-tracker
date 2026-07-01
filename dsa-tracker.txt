@@ -1,4 +1,83 @@
 question number 
+
+*****************************************************************************
+question number 2812. Find the Safest Path in a Grid
+
+class Solution {
+    int[][] dirs = {{0,1},{0,-1},{1,0},{-1,0}};
+    
+    public int maximumSafenessFactor(List<List<Integer>> grid) {
+        int n = grid.size();
+        int[][] dist = new int[n][n];
+        
+        for (int[] row : dist) Arrays.fill(row, -1);
+        Deque<int[]> q = new ArrayDeque<>();
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid.get(i).get(j) == 1) {
+                    q.offer(new int[]{i, j});
+                    dist[i][j] = 0;
+                }
+            }
+        }
+        
+        while (!q.isEmpty()) {
+            int[] curr = q.poll();
+            int x = curr[0], y = curr[1];
+            for (int[] d : dirs) {
+                int nx = x + d[0], ny = y + d[1];
+                if (nx >= 0 && nx < n && ny >= 0 && ny < n && dist[nx][ny] == -1) {
+                    dist[nx][ny] = dist[x][y] + 1;
+                    q.offer(new int[]{nx, ny});
+                }
+            }
+        }
+        
+        if (dist[0][0] == 0 || dist[n-1][n-1] == 0) return 0;
+        int lo = 0, hi = n * 2;
+        int ans = 0;
+        
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
+            if (canReach(dist, n, mid)) {
+                ans = mid;
+                lo = mid + 1;
+            } else {
+                hi = mid - 1;
+            }
+        }
+        
+        return ans;
+    }
+    
+    private boolean canReach(int[][] dist, int n, int minSafe) {
+        if (dist[0][0] < minSafe) return false;
+        
+        boolean[][] visited = new boolean[n][n];
+        Deque<int[]> q = new ArrayDeque<>();
+        q.offer(new int[]{0, 0});
+        visited[0][0] = true;
+        
+        while (!q.isEmpty()) {
+            int[] curr = q.poll();
+            int x = curr[0], y = curr[1];
+            
+            if (x == n-1 && y == n-1) return true;
+            
+            for (int[] d : dirs) {
+                int nx = x + d[0], ny = y + d[1];
+                if (nx >= 0 && nx < n && ny >= 0 && ny < n
+                    && !visited[nx][ny]
+                    && dist[nx][ny] >= minSafe) {
+                    visited[nx][ny] = true;
+                    q.offer(new int[]{nx, ny});
+                }
+            }
+        }
+        return false;
+    }
+}
 ***************************************************************************** 
 question number 1358. Number of Substrings Containing All Three Characters 
 
