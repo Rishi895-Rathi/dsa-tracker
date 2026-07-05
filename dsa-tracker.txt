@@ -1,4 +1,127 @@
 question number 
+*****************************************************************************
+question number 1301 Number of paths with Max Score 
+class Solution {
+
+    int n;
+    int MOD = 1000000007;
+
+    class Pair {
+        int score;
+        int paths;
+
+        Pair(int score, int paths) {
+            this.score = score;
+            this.paths = paths;
+        }
+    }
+
+    Pair[][] dp;
+    boolean[][] vis;
+
+    int getIntFromChar(char ch) {
+        if (ch == 'S' || ch == 'E')
+            return 0;
+        return ch - '0';
+    }
+
+    boolean isValid(int i, int j, List<String> board) {
+        return i >= 0 && i < n &&
+               j >= 0 && j < n &&
+               board.get(i).charAt(j) != 'X';
+    }
+
+    Pair solve(int i, int j, List<String> board) {
+
+        if (vis[i][j])
+            return dp[i][j];
+
+        char ch = board.get(i).charAt(j);
+
+        if (ch == 'E') {
+            vis[i][j] = true;
+            dp[i][j] = new Pair(0, 1);
+            return dp[i][j];
+        }
+
+        int upScore = Integer.MIN_VALUE;
+        int leftScore = Integer.MIN_VALUE;
+        int diagScore = Integer.MIN_VALUE;
+
+        int upPaths = 0;
+        int leftPaths = 0;
+        int diagPaths = 0;
+
+        // Up
+        if (isValid(i - 1, j, board)) {
+
+            Pair up = solve(i - 1, j, board);
+
+            if (up.paths > 0) {
+                upScore = up.score + getIntFromChar(ch);
+                upPaths = up.paths;
+            }
+        }
+
+        // Left
+        if (isValid(i, j - 1, board)) {
+
+            Pair left = solve(i, j - 1, board);
+
+            if (left.paths > 0) {
+                leftScore = left.score + getIntFromChar(ch);
+                leftPaths = left.paths;
+            }
+        }
+
+        // Diagonal
+        if (isValid(i - 1, j - 1, board)) {
+
+            Pair diag = solve(i - 1, j - 1, board);
+
+            if (diag.paths > 0) {
+                diagScore = diag.score + getIntFromChar(ch);
+                diagPaths = diag.paths;
+            }
+        }
+
+        int maxScore = Math.max(upScore, Math.max(leftScore, diagScore));
+
+        int ways = 0;
+
+        if (upScore == maxScore)
+            ways = (ways + upPaths) % MOD;
+
+        if (leftScore == maxScore)
+            ways = (ways + leftPaths) % MOD;
+
+        if (diagScore == maxScore)
+            ways = (ways + diagPaths) % MOD;
+
+        if (ways == 0)
+            maxScore = 0;
+
+        vis[i][j] = true;
+        dp[i][j] = new Pair(maxScore, ways);
+
+        return dp[i][j];
+    }
+
+    public int[] pathsWithMaxScore(List<String> board) {
+
+        n = board.size();
+
+        dp = new Pair[n][n];
+        vis = new boolean[n][n];
+
+        Pair ans = solve(n - 1, n - 1, board);
+
+        if (ans.paths == 0)
+            return new int[] {0, 0};
+
+        return new int[] {ans.score, ans.paths};
+    }
+} 
 
 *****************************************************************************
 question number 2812. Find the Safest Path in a Grid
