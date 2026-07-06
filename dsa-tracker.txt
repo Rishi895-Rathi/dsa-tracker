@@ -1,5 +1,47 @@
 question number 
 *****************************************************************************
+question number 1288 Remove Covered intervals
+//brute froce
+class Solution {
+    public int removeCoveredIntervals(int[][] intervals) {
+        int n = intervals.length;
+        int ans = 0;
+        for(int i = 0; i < n; i++){
+            boolean covered = false;
+            for(int j = 0; j < n; j++){
+                if(i == j)
+                    continue;
+                if(intervals[j][0] <= intervals[i][0] && intervals[j][1] >= intervals[i][1]){
+                    covered = true;
+                    break;
+                }
+            }
+            if(!covered)
+                ans++;
+        }
+        return ans;
+    }
+}
+//lilttle optimized 
+class Solution {
+    public int removeCoveredIntervals(int[][] intervals) {
+        Arrays.sort(intervals, (a, b) -> {
+            if (a[0] == b[0]) {
+                return Integer.compare(b[1], a[1]); // end descending
+            }
+            return Integer.compare(a[0], b[0]); // start ascending
+        });
+        int maxEnd = -1, ans = 0;
+        for(int i = 0; i < intervals.length; i++){
+            if(maxEnd < intervals[i][1]){
+                ans++;
+                maxEnd = intervals[i][1];
+            }
+        }
+        return ans;
+    }
+}
+*****************************************************************************
 question number 1301 Number of paths with Max Score 
 class Solution {
 
