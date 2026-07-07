@@ -1,5 +1,48 @@
 question number 
 *****************************************************************************
+question number3754 ConCatenate Non-Zero DIgit and Multiply by Sum I
+//brute froce approach 
+class Solution {
+    public long sumAndMultiply(int n) {
+        long ans = 0;
+        int div = 1 , sum = 0;
+        while(n/div >= 10){
+            div *= 10;
+        }
+        while(div > 0){
+            int dig = n/div;
+            if(dig != 0){
+                ans = ans*10+dig;
+                sum += dig;
+            }
+            n %= div;
+            div /= 10;
+        }
+        return ans*sum;
+    }
+}
+//Little optimized Approach
+class Solution {
+    public long sumAndMultiply(int n) {
+        int x = 0;
+        int sum = 0;
+        int i = 1;
+
+        while (n > 0) {
+            int m = n % 10;
+            n /= 10;
+
+            if (m == 0) continue;
+
+            sum += m;
+            x += m * i;
+            i *= 10;
+        }
+
+        return (long) x * sum;
+    }
+} 
+*****************************************************************************
 question number 1288 Remove Covered intervals
 //brute froce
 class Solution {
