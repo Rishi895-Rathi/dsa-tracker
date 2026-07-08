@@ -1,5 +1,230 @@
 question number 
 *****************************************************************************
+question number 3756. Concatenate Non-Zero Digits and Multiply by Sum II
+class Solution {
+    int Mod = 1000000007;
+    public int[] sumAndMultiply(String s, int[][] queries) {
+        int n = s.length();
+        int[] res = new int[queries.length];
+        long[] prefixSum = new long[n];
+        long[] prefixNum = new long[n];
+        int[] nonZeroCount = new int[n];
+        long[] pow = new long[n + 1];
+
+        // power of 10 array
+        pow[0] = 1;
+        for(int i = 1; i <= n; i++){
+            pow[i] = (pow[i - 1] * 10) % Mod;
+        }
+
+        // base case: first character
+        prefixSum[0] = s.charAt(0) - '0';
+        prefixNum[0] = s.charAt(0) - '0';
+        if(s.charAt(0) != '0'){
+            nonZeroCount[0] = 1;
+        }else{
+            nonZeroCount[0] = 0;
+        }
+
+        // build prefix arrays
+        for(int i = 1; i < n; i++){
+            int d = s.charAt(i) - '0';
+
+            prefixSum[i] = prefixSum[i - 1] + d;
+
+            if(d == 0){
+                prefixNum[i] = prefixNum[i - 1];
+                nonZeroCount[i] = nonZeroCount[i - 1];
+            }else{
+                prefixNum[i] = (prefixNum[i - 1] * 10 + d) % Mod;
+                nonZeroCount[i] = nonZeroCount[i - 1] + 1;
+            }
+        }
+
+        // answer each query
+        for(int i = 0; i < queries.length; i++){
+            int l = queries[i][0];
+            int r = queries[i][1];
+            long prevNum;
+            int prevCount;
+            long prevSum;
+            if(l == 0){
+                prevNum = 0;
+                prevCount = 0;
+                prevSum = 0;
+            }else{
+                prevNum = prefixNum[l - 1];
+                prevCount = nonZeroCount[l - 1];
+                prevSum = prefixSum[l - 1];
+            }
+            int shiftCount = nonZeroCount[r] - prevCount;
+            long x = prefixNum[r] - (prevNum * pow[shiftCount]) % Mod;
+            x = (x + Mod) % Mod;
+            long sum = prefixSum[r] - prevSum;
+            long answer = (x * sum) % Mod;
+            res[i] = (int) answer;
+        }
+        return res;
+    }
+}
+
+// class Solution {
+//     int MOD = 1000000007;
+//     public int[] sumAndMultiply(String s, int[][] queries){
+//         int n = s.length();
+
+//         //prefix sum
+//         long[] prefixSum = new long[n];
+//         prefixSum[0] = s.charAt(0) - '0';
+//         for(int i = 1; i < n; i++)
+//             prefixSum[i] = prefixSum[i - 1] + (s.charAt(i) - '0');
+
+//         //compression
+//         ArrayList<Integer> digits = new ArrayList<>();
+//         ArrayList<Integer> pos = new ArrayList<>();
+//         for(int i = 0; i < n; i++) {
+//             int d = s.charAt(i) - '0';
+//             if(d != 0) {
+//                 digits.add(d);
+//                 pos.add(i);
+//             }
+//         }
+
+//         //rolling hash
+//         int m = digits.size();
+//         long[] prefixHash = new long[m];
+//         long[] pow = new long[m + 1];
+//         pow[0] = 1;
+//         for(int i = 1; i <= m; i++)
+//             pow[i] = (pow[i - 1] * 10) % MOD;
+//         if(m > 0) {
+//             prefixHash[0] = digits.get(0);
+//             for(int i = 1; i < m; i++)
+//                 prefixHash[i] = (prefixHash[i - 1] * 10 + digits.get(i)) % MOD;
+//         }
+
+//         int[] ans = new int[queries.length];
+//         for(int i = 0; i < queries.length; i++){
+//             int l = queries[i][0];
+//             int r = queries[i][1];
+
+//             //prefix sum
+//             long sum = prefixSum[r] - (l == 0 ? 0 : prefixSum[l - 1]);
+
+//             //binary search
+//             int left = lowerBound(pos, l);
+//             int right = upperBound(pos, r) - 1;
+
+//             if(left > right){
+//                 ans[i] = 0;
+//                 continue;
+//             }
+
+//             //rolling hash
+//             long number;
+//             if(left == 0)
+//                 number = prefixHash[right];
+//             else{
+//                 int len = right - left + 1;
+//                 number = (prefixHash[right] - (prefixHash[left - 1] * pow[len]) % MOD + MOD) % MOD;
+//             }
+
+//             ans[i] = (int)((number * (sum % MOD)) % MOD);
+//         }
+//         return ans;
+//     }
+
+//     //lower bound
+//     private int lowerBound(ArrayList<Integer> pos, int target){
+//         int low = 0, high = pos.size() - 1, ans = pos.size();
+//         while(low <= high) {
+//             int mid = low + (high - low) / 2;
+//             if(pos.get(mid) >= target){
+//                 ans = mid;
+//                 high = mid - 1;
+//             } else
+//                 low = mid + 1;
+//         }
+//         return ans;
+//     }
+
+//     //upper bound
+//     private int upperBound(ArrayList<Integer> pos, int target){
+//         int low = 0, high = pos.size() - 1, ans = pos.size();
+//         while(low <= high) {
+//             int mid = low + (high - low) / 2;
+//             if(pos.get(mid) > target){
+//                 ans = mid;
+//                 high = mid - 1;
+//             }else
+//                 low = mid + 1;
+//         }
+//         return ans;
+//     }
+// }
+
+
+
+// class Solution {
+//     int Mod = 1000000007;
+//     public int[] sumAndMultiply(String s, int[][] queries) {
+//         int[] res = new int[queries.length];
+//         long[] prefixSum = new long[s.length()];
+//         prefixSum[0] = s.charAt(0) - '0';
+//         long[] prefixNum = new long[s.length()];
+//         prefixNum[0] = s.charAt(0) - '0';
+//         long[] pow = new long[s.length()];
+//         pow[0] = 1;
+//         for(int i = 1; i < s.length(); i++){
+//             //pefixsum 
+//             prefixSum[i] = prefixSum[i - 1] + (s.charAt(i) - '0');
+            
+//             //power
+//             pow[i] = (pow[i - 1] * 10) % Mod;
+
+//             //prefixnum
+//             if(s.charAt(i) == '0'){
+//                 prefixNum[i] = prefixNum[i - 1]; 
+//             }else{
+//                 prefixNum[i] = (prefixNum[i - 1] * 10 + (s.charAt(i) - '0')) % Mod;
+//             }
+//         }
+
+//         long number = 0;
+//         for(int i = 0; i < queries.length; i++){
+//             int l = queries[i][0];
+//             int r = queries[i][1];
+//             if(l == 0){
+//                 number = prefixNum[r];
+//                 number = (number * prefixSum[r]) % Mod;
+//             }
+//             else{
+//                 number = (prefixNum[r] - (prefixNum[l - 1] * pow[r - l + 1]) % Mod + Mod) % Mod;
+//                 number = (number * (prefixSum[r] - prefixSum[l - 1])) % Mod;
+//             }
+            
+//             // inital handling the number then it clicks when the number = 2 - 5 it becomes -3 that's y Mod it added 
+//             // number = (prefixNum[r] - (prefixNum[l - 1] * pow[len]) % MOD);
+//             res[i] = (int)(number % Mod);
+//         }
+//         return res;
+
+//         // for (int i = 0; i < queries.length; i++) {
+//         //     int l = queries[i][0];
+//         //     int r = queries[i][1];
+//         //     long digit = 0, sum = 0;
+//         //     for (int j = l; j <= r; j++) {
+//         //         int d = s.charAt(j) - '0';
+//         //         if (d == 0) continue;
+//         //         digit = (digit * 10 + d) % Mod;
+//         //         sum += d;
+//         //     }
+//         //     res[i] = (int)((digit * sum) % Mod);
+//         // }
+//         // return res;
+//     }
+// }
+*****************************************************************************
 question number3754 ConCatenate Non-Zero DIgit and Multiply by Sum I
 //brute froce approach 
 class Solution {
