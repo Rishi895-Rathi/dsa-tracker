@@ -1,5 +1,73 @@
 question number 
 *****************************************************************************
+question number 3534 Path Existence Queries in a Graph II
+import java.util.Arrays;
+
+class Solution {
+    public int[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
+        Integer[] order = new Integer[n];
+        for (int i = 0; i < n; i++) order[i] = i;
+        Arrays.sort(order, (a, b) -> nums[a] - nums[b]);
+
+        int[] sortedNums = new int[n];
+        int[] posInSorted = new int[n];
+        for (int i = 0; i < n; i++) {
+            sortedNums[i] = nums[order[i]];
+            posInSorted[order[i]] = i;
+        }
+
+        int[] comp = new int[n];
+        int c = 0;
+        comp[0] = 0;
+        for (int i = 1; i < n; i++) {
+            if (sortedNums[i] - sortedNums[i - 1] > maxDiff) c++;
+            comp[i] = c;
+        }
+
+        int[] nextHop = new int[n];
+        int r = 0;
+        for (int i = 0; i < n; i++) {
+            if (r < i) r = i;
+            while (r + 1 < n && sortedNums[r + 1] - sortedNums[i] <= maxDiff) r++;
+            nextHop[i] = r;
+        }
+
+        int LOG = 1;
+        while ((1 << LOG) < n) LOG++;
+        int[][] up = new int[LOG + 1][n];
+        up[0] = nextHop;
+        for (int k = 1; k <= LOG; k++) {
+            for (int i = 0; i < n; i++) {
+                up[k][i] = up[k - 1][up[k - 1][i]];
+            }
+        }
+
+        int[] res = new int[queries.length];
+        for (int q = 0; q < queries.length; q++) {
+            int u = posInSorted[queries[q][0]];
+            int v = posInSorted[queries[q][1]];
+            if (u > v) { int t = u; u = v; v = t; }
+
+            if (comp[u] != comp[v]) {
+                res[q] = -1;
+                continue;
+            }
+
+            int cur = u;
+            int hops = 0;
+            for (int k = LOG; k >= 0; k--) {
+                if (up[k][cur] < v) {
+                    cur = up[k][cur];
+                    hops += (1 << k);
+                }
+            }
+            if (cur != v) hops++;
+            res[q] = hops;
+        }
+        return res;
+    }
+}
+*****************************************************************************
 question number 3532 Path Existence Queries in a Graph I
 class Solution {
     public boolean[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
