@@ -1,5 +1,41 @@
 question number 
 *****************************************************************************
+question number 207 Course Schedule 
+class Solution {
+    public boolean canFinish(int n, int[][] prerequisites) {
+        List<Integer>[] adj = new ArrayList[n];
+        for(int i = 0; i < n; i++){
+            adj[i] = new ArrayList<>();
+        }
+        int[] indegree = new int[n];
+        for(int[] pair : prerequisites){
+            int course = pair[0];
+            int pre = pair[1];
+            adj[pre].add(course);
+            indegree[course]++;
+        }
+        Queue<Integer> queue = new LinkedList<>();
+        for(int i = 0; i < n; i++){
+            if(indegree[i] == 0){
+                queue.offer(i);
+            }
+        }
+        int count = 0;
+        while(!queue.isEmpty()){
+            int current = queue.poll();
+            count++;
+            for(int next : adj[current]){
+                indegree[next]--;
+                if(indegree[next] == 0){
+                    queue.offer(next);
+                }
+            }
+        }
+
+        return count == n;
+    }
+} 
+*****************************************************************************
 question number 3534 Path Existence Queries in a Graph II
 import java.util.Arrays;
 
