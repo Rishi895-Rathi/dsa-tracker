@@ -1,4 +1,34 @@
-question numbebr 
+question number
+*****************************************************************************
+question numbebr 3513 Number of Unique XOR Triplets I
+
+approach one solved in O(n + log n)
+class Solution {
+    public int uniqueXorTriplets(int[] nums) {
+        int max = 0;
+
+        for (int num : nums) {
+            max = Math.max(max, num);
+        }
+
+        if (max <= 2)
+            return max;
+
+        int ans = 1;
+        while (ans <= max)
+            ans <<= 1;
+
+        return ans;
+    }
+}
+approach two solved in O(1)
+class Solution {
+    public int uniqueXorTriplets(int[] nums) {
+        int n = nums.length;
+        if(n <= 2) return n;
+        return Integer.highestOneBit(n) << 1;
+    }
+} 
 *****************************************************************************
 question number 155 Min Stack
 class MinStack {
