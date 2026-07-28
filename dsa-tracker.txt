@@ -1,4 +1,42 @@
-question number
+question number 
+*****************************************************************************
+question number 3157 Smallest Palindromic Rearrangement I
+class Solution {
+    public String smallestPalindrome(String s) {
+        int n = s.length();
+        int[] freq = new int[26];
+        for(char c : s.toCharArray()) freq[c - 'a']++;
+        char[] ans = new char[n];
+        int l = 0, r = n - 1;
+        for(int i = 0; i < 26; i++) {
+            char ch = (char)(i + 'a');
+            while(freq[i] >= 2) {
+                ans[l++] = ch;
+                ans[r--] = ch;
+                freq[i] -= 2;
+            }
+            if(freq[i] == 1) ans[n / 2] = ch;
+        }
+        return new String(ans);
+    }
+}
+appraoch one 
+
+class Solution {
+    public String smallestPalindrome(String s) {
+        int[] freq = new int[26];
+        for(char c : s.toCharArray()) freq[c - 'a']++;
+        StringBuilder left = new StringBuilder();
+        String mid = "";
+        for(int i = 0; i < 26; i++) {
+            if((freq[i] & 1) == 1) mid = String.valueOf((char)(i + 'a'));
+            for(int j = 0; j < freq[i] / 2; j++) left.append((char)(i + 'a'));
+        }
+        String right = new StringBuilder(left).reverse().toString();
+        return left.toString() + mid + right;
+    }
+}
+approach two
 *****************************************************************************
 question numbebr 3513 Number of Unique XOR Triplets I
 
