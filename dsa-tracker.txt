@@ -1,5 +1,68 @@
 question number 
 *****************************************************************************
+question number 3514 Number of Unique XOR Triplets II
+
+accepted solution 
+class Solution {
+    public int uniqueXorTriplets(int[] nums) {
+        int mx = 0;
+        for (int x : nums) {
+            mx = Math.max(mx, x);
+        }
+        mx <<= 1; // 2 * max(nums), all XORs < 2*max
+
+        boolean[] pairXorPresent = new boolean[mx];
+        // Step 1: mark all possible a ^ b
+        for (int a : nums) {
+            for (int b : nums) {
+                pairXorPresent[a ^ b] = true;
+            }
+        }
+
+        int[] tripletXorPresent = new int[mx];
+        // Step 2: from each possible (a ^ b), combine with any c
+        for (int ab = 0; ab < mx; ab++) {
+            if (pairXorPresent[ab]) {
+                for (int c : nums) {
+                    tripletXorPresent[ab ^ c] = 1;
+                }
+            }
+        }
+
+        int ans = 0;
+        for (int v : tripletXorPresent) {
+            ans += v;
+        }
+        return ans;
+    }
+} 
+
+tle solution 
+
+class Solution {
+    public int uniqueXorTriplets(int[] nums) {
+        // Step 1: all pair XORs
+        HashSet<Integer> pairXors = new HashSet<>();
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {  // i,j independent (we allow repetition)
+                pairXors.add(nums[i] ^ nums[j]);  // covers a^a, a^b, etc.
+            }
+        }
+
+        // Step 2: (a^b) ^ c for all c
+        HashSet<Integer> tripletXors = new HashSet<>();
+        for (int ab : pairXors) {
+            for (int k = 0; k < n; k++) {
+                tripletXors.add(ab ^ nums[k]);
+            }
+        }
+
+        // Step 3: unique count
+        return tripletXors.size();
+    }
+}
+*****************************************************************************
 question number 3157 Smallest Palindromic Rearrangement I
 class Solution {
     public String smallestPalindrome(String s) {
