@@ -1,5 +1,75 @@
 question number 
 *****************************************************************************
+question number 3518
+class Solution {
+    public String smallestPalindrome(String s, int k) {
+        int n = s.length();
+        int[] freq = new int[26];
+        for(char ch : s.toCharArray()){
+            freq[ch - 'a']++;
+        }
+        int[] half = new int[26];
+        char mid = 0;
+        for(int i = 0; i < 26; i++){
+            half[i] = freq[i] / 2;
+            if(freq[i] % 2 == 1){
+                mid = (char) (i + 'a');
+            }
+        }
+        int halfLen = 0;
+        for(int x : half) halfLen += x;
+        if(halfLen == 0){
+            return(k == 1 && mid != 0) ? String.valueOf(mid) : "";
+        }
+        long totalPerm = countArrangements(half, k);
+        if(totalPerm < k) return "";
+        StringBuilder left = new StringBuilder();
+        for(int pos = 0; pos < halfLen; pos++){
+            for(int c = 0; c < 26; c++){
+                if(half[c] == 0) continue;
+                half[c]--;
+                long cnt = countArrangements(half, k);
+                if(cnt >= k){
+                    left.append((char) (c + 'a'));
+                    break;
+                }else{
+                    half[c]++;
+                    k -= cnt;
+                }
+            }
+        }
+        String leftStr = left.toString();
+        String rightStr = left.reverse().toString();
+        if(mid != 0){
+            return leftStr + mid + rightStr;
+        }else{
+            return leftStr + rightStr;
+        }
+    }
+    private long countArrangements(int[] counts, long limit){
+        int total = 0;
+        for (int x : counts) total += x;
+        long res = 1;
+        for(int x : counts){
+            if(x == 0) continue;
+            res = res * nCr(total, x, limit);
+            if(res >= limit) return res; 
+            total -= x;
+        }
+        return res;
+    }
+    private long nCr(int n, int r, long limit){
+        if(r > n) return 0;
+        r = Math.min(r, n - r);
+        long ans = 1;
+        for(int i = 1; i <= r; i++){
+            ans = ans * (n - r + i) / i;
+            if(ans >= limit) return ans;
+        }
+        return ans;
+    }
+} 
+*****************************************************************************
 question number 3514 Number of Unique XOR Triplets II
 
 accepted solution 
