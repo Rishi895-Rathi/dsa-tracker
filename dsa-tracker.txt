@@ -1,3 +1,36 @@
+question number 1406 Stone Game III
+class Solution {
+    Integer[] dp;
+
+    public String stoneGameIII(int[] stoneValue) {
+        int diff = solve(stoneValue, 0);
+
+        if (diff > 0) return "Alice";
+        if (diff < 0) return "Bob";
+        return "Tie";
+    }
+
+    private int solve(int[] stoneValue, int i) {
+        if (i >= stoneValue.length) {
+            return 0;
+        }
+
+        if (dp[i] != null) {
+            return dp[i];
+        }
+
+        int take = 0;
+        int ans = Integer.MIN_VALUE;
+
+        for (int x = 1; x <= 3 && i + x - 1 < stoneValue.length; x++) {
+            take += stoneValue[i + x - 1];
+            ans = Math.max(ans, take - solve(stoneValue, i + x));
+        }
+
+        return dp[i] = ans;
+    }
+}
+*****************************************************************************
 question number 877 StOne Game 
 class Solution {
     Integer[][] dp;
