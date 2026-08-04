@@ -1,4 +1,12 @@
-question number
+question number 
+*****************************************************************************
+question number 1464 Maximum Prodouct of Two Elements in a Array
+class Solution {
+    public int maxProduct(int[] nums) {
+        Arrays.sort(nums);
+        return (int)((nums[nums.length - 1] -1) *(nums[nums.length - 2] -1));
+    }
+}
 *****************************************************************************
 question number 3731 Find Missing Element
 class Solution {
