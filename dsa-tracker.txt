@@ -1,5 +1,26 @@
 question number 
 *****************************************************************************
+question number 3345 Smallest Divisible Digit Product
+class Solution {
+    public int smallestNumber(int n, int t) {
+        while (true) {
+            int num = n;
+            int product = 1;
+
+            while (num > 0) {
+                product *= num % 10;
+                num /= 10;
+            }
+
+            if (product % t == 0) {
+                return n;
+            }
+
+            n++;
+        }
+    }
+} 
+*****************************************************************************
 question number 260 Single Number III
 class Solution {
     public int[] singleNumber(int[] nums) {
