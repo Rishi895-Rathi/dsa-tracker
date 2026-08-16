@@ -1,5 +1,22 @@
 question number 
 *****************************************************************************
+question number 3702 Longest Subsequence With Non-Zero Bitwise XOR
+class Solution {
+    public int longestSubsequence(int[] nums) {
+        int xor = 0 , count  = 0;
+        boolean isZero = false;
+        for(int i = 0; i < nums.length; i++){
+            xor = xor ^ nums[i];
+            if(nums[i] != 0){
+                isZero = true;
+            }
+        }
+        if(xor != 0) return nums.length;
+        if(isZero) return nums.length - 1; 
+        return 0;
+    }
+} 
+*****************************************************************************
 question number 2996 Smallest Missing Integer Greater Than Sequnetial Prefix Sum
 class Solution {
     public int missingInteger(int[] nums) {
