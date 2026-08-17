@@ -1,5 +1,39 @@
 question number 
 *****************************************************************************
+question number 234 Plaindrome Linked List
+class Solution {
+    public boolean isPalindrome(ListNode head) {        
+        ListNode slow = head ;
+        ListNode fast = head ;
+
+        //now find the middle 
+        while(fast != null && fast.next != null){
+            fast = fast.next.next ;
+            slow = slow.next ;
+        }
+        // now the linked list looks like 1 2 1 2 that is after the reversing from the middle 
+        ListNode prev = null ;
+        ListNode curr = slow ; 
+        while(curr != null){
+            ListNode next = curr.next ; 
+            curr.next = prev ;
+            prev = curr ;
+            curr = next ;
+        }
+        //check wether it is palindorme or not 
+        ListNode first = head;
+        ListNode second = prev;
+        while(second != null){
+            if(first.val != second.val){
+                return false;
+            }
+            first = first.next;
+            second = second.next;
+        }
+        return true;
+    }
+} 
+*****************************************************************************
 question number 3702 Longest Subsequence With Non-Zero Bitwise XOR
 class Solution {
     public int longestSubsequence(int[] nums) {
