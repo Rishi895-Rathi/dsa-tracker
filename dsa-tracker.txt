@@ -1,5 +1,19 @@
 question number 
 *****************************************************************************
+question number 700 Search in a Binary Search Tree
+class Solution {
+    public TreeNode searchBST(TreeNode root, int val) {
+        if(root == null) return null;
+        if(root.val == val){
+            return root;
+        }
+        if(val < root.val){
+            return searchBST(root.left , val);
+        }
+        return searchBST(root.right , val);   
+    }
+}
+*****************************************************************************
 question number 111 Minimum Depth of Binary Tree
 class Solution {
     public int minDepth(TreeNode root) {
