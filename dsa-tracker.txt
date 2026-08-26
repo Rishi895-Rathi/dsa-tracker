@@ -27,6 +27,37 @@ class Solution {
         return slow;
     }
 }
+
+approach two
+ListNode head;
+
+    public TreeNode sortedListToBST(ListNode head) {
+	this.head = head;
+
+        int n = 0;
+        ListNode temp = head;
+
+        while (temp != null) {
+            n++;
+            temp = temp.next;
+        }
+
+        return solve(n);
+    }
+
+    private TreeNode solve(int n) {
+        if (n <= 0) return null;
+
+        TreeNode left = solve(n / 2);
+
+        TreeNode root = new TreeNode(head.val);
+        head = head.next;
+
+        root.left = left;
+        root.right = solve(n - n / 2 - 1);
+
+        return root;
+    }
 ****************************************************************************
 question number 108. Convert Sorted Array to Binary Search Tree
 class Solution {
