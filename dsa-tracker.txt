@@ -1,4 +1,32 @@
-question number
+question number 
+*****************************************************************************
+question number 109. Convert Sorted List to Binary Search Tree
+class Solution {
+    public TreeNode sortedListToBST(ListNode head) {
+             
+        return solve(head , null);
+    }
+    private TreeNode solve(ListNode head,ListNode tail){
+        if(head == tail) return null;
+
+        ListNode mid = middle(head , tail);
+        TreeNode root = new TreeNode(mid.val);
+        root.left = solve(head , mid);
+        root.right = solve(mid.next , tail);
+
+        return root;
+    }
+    private ListNode middle(ListNode head , ListNode tail){
+        ListNode slow = head;
+        ListNode fast = head; 
+
+        while(fast != tail && fast.next != tail){
+            fast = fast.next.next;
+            slow = slow.next; 
+        }
+        return slow;
+    }
+}
 ****************************************************************************
 question number 108. Convert Sorted Array to Binary Search Tree
 class Solution {
