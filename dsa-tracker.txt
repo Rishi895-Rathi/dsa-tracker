@@ -1,4 +1,51 @@
-question number 
+question number 4031. Find All Numbers Disappeared in an Array II
+class Solution {
+    public List<List<Integer>> findDisappearedNumbers(int[] nums, int lower, int upper) {
+
+        List<List<Integer>> res = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
+        for(int num : nums){
+            set.add(num);
+        }
+        int i = lower;
+        while(i <= upper){
+            if(set.contains(i)){
+                i++;
+                continue;
+            }
+            int start = i;
+            while (i <= upper && !set.contains(i)) {
+                i++;
+            }
+            int end = i - 1;
+            res.add(Arrays.asList(start, end));
+        }
+        return res;
+    }
+}
+*****************************************************************************
+question number 4030 Check ASCII Palindrome
+class Solution {
+    public boolean isPalindromic(String s) {
+        StringBuilder binary = new StringBuilder();
+        for(char ch : s.toCharArray()){
+            String bits = String.format("%8s",
+                    Integer.toBinaryString((int) ch))
+                    .replace(' ', '0');
+            binary.append(bits);
+        }
+        int left = 0;
+        int right = binary.length() - 1;
+        while(left < right){
+            if(binary.charAt(left) != binary.charAt(right)){
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+} 
 *****************************************************************************
 question number 109. Convert Sorted List to Binary Search Tree
 class Solution {
