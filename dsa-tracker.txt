@@ -1,6 +1,36 @@
+****************************************************************************
 question number 
 *****************************************************************************
-question number 
+question number 3718. Smallest Missing Multiple of K
+class Solution {
+    public int missingMultiple(int[] nums, int k) {
+
+        // Set<Integer> set = new HashSet<>();
+        // for(int num : nums){
+        //     set.add(num);
+        // }
+        int mul = k;
+        // while(set.contains(mul)){
+        //     mul += k;
+        // }
+        
+        // return mul;
+
+        while (true){
+            boolean found = false;
+            for (int num : nums) {
+                if (num == mul) {
+                    found = true;
+                    break;
+                }
+            }
+            if(!found){
+                return mul;
+            }
+            mul += k;
+        }
+    }
+} 
 *****************************************************************************
 question number 501. Find Mode in Binary Search Tree
 class Solution {
