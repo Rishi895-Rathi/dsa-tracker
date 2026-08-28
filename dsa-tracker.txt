@@ -1,3 +1,49 @@
+question number 
+*****************************************************************************
+question number 
+*****************************************************************************
+question number 501. Find Mode in Binary Search Tree
+class Solution {
+    List<Integer> ans = new ArrayList<>();
+    int maxcount = 0, count = 0;
+    Integer prev = null;
+    public int[] findMode(TreeNode root) {
+        
+        inorder(root);
+        int[] res = new int[ans.size()];
+        for(int i = 0; i < ans.size() ; i++){
+            res[i] = ans.get(i);
+        }
+        return res;
+    }
+
+    private void inorder(TreeNode root){
+        if(root == null){
+            return;
+        }
+        inorder(root.left);
+
+        if(prev == null){
+            count = 1;
+        }else if(root.val == prev){
+            count++;
+        }else{
+            count = 1;
+        }
+        if(count > maxcount){
+            ans.clear();
+            maxcount = count;
+            ans.add(root.val);
+        }
+        else if(count == maxcount){
+            ans.add(root.val);
+        }
+        prev = root.val;
+
+        inorder(root.right);
+    }
+}
+*****************************************************************************
 question number 4031. Find All Numbers Disappeared in an Array II
 class Solution {
     public List<List<Integer>> findDisappearedNumbers(int[] nums, int lower, int upper) {
