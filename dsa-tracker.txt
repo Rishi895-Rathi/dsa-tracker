@@ -1,4 +1,322 @@
-quesrtion number 
+question number 
+*****************************************************************************
+question number 4037. Maximum Valid Split Positions II
+class Solution {
+    int n;
+    int[] pre, suf;
+    int[][] sp;
+    int[] lg;
+
+    int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    int query(int l, int r) {
+        int k = lg[r - l + 1];
+        return gcd(sp[k][l], sp[k][r - (1 << k) + 1]);
+    }
+
+    int rangeGcd(int l, int r) {
+        if (l > r) return 0;
+        return query(l, r);
+    }
+
+    int preAt(int i) {
+        return i < 0 ? 0 : pre[i];
+    }
+
+    int sufAt(int i) {
+        return i >= n ? 0 : suf[i];
+    }
+
+    public int maxValidSplits(int[] nums) {
+        n = nums.length;
+
+        pre = new int[n];
+        suf = new int[n];
+
+        pre[0] = nums[0];
+        for (int i = 1; i < n; i++) {
+            pre[i] = gcd(pre[i - 1], nums[i]);
+        }
+
+        suf[n - 1] = nums[n - 1];
+        for (int i = n - 2; i >= 0; i--) {
+            suf[i] = gcd(suf[i + 1], nums[i]);
+        }
+
+        lg = new int[n + 1];
+        for (int i = 2; i <= n; i++) {
+            lg[i] = lg[i / 2] + 1;
+        }
+
+        int K = lg[n] + 1;
+        sp = new int[K][n];
+
+        for (int i = 0; i < n; i++) {
+            sp[0][i] = nums[i];
+        }
+
+        for (int k = 1; k < K; k++) {
+            for (int i = 0; i + (1 << k) <= n; i++) {
+                sp[k][i] = gcd(
+                    sp[k - 1][i],
+                    sp[k - 1][i + (1 << (k - 1))]
+                );
+            }
+        }
+
+        int best = 0;
+
+        // Without removing any element
+        for (int i = 0; i < n - 1; i++) {
+            if (preAt(i) == sufAt(i + 1)) {
+                best++;
+            }
+        }
+
+        // Remove one element r
+        for (int r = 0; r < n; r++) {
+            int cnt = 0;
+
+            // Split is before the removed element
+            int lo = 1;
+            int hi = r - 1;
+
+            if (lo <= hi) {
+
+                int a = lo;
+                int b = hi;
+                int c1 = hi + 1;
+
+                while (a <= b) {
+                    int m = a + (b - a) / 2;
+
+                    int rightGcd = gcd(
+                        rangeGcd(m, r - 1),
+                        sufAt(r + 1)
+                    );
+
+                    if (preAt(m - 1) <= rightGcd) {
+                        c1 = m;
+                        b = m - 1;
+                    } else {
+                        a = m + 1;
+                    }
+                }
+
+                a = lo;
+                b = hi;
+                int c2 = lo - 1;
+
+                while (a <= b) {
+                    int m = a + (b - a) / 2;
+
+                    int rightGcd = gcd(
+                        rangeGcd(m, r - 1),
+                        sufAt(r + 1)
+                    );
+
+                    if (preAt(m - 1) >= rightGcd) {
+                        c2 = m;
+                        a = m + 1;
+                    } else {
+                        b = m - 1;
+                    }
+                }
+
+                if (c1 <= c2) {
+                    cnt += c2 - c1 + 1;
+                }
+            }
+
+            // Split is after the removed element
+            lo = r + 2;
+            hi = n - 1;
+
+            if (lo <= hi) {
+
+                int a = lo;
+                int b = hi;
+                int c1 = hi + 1;
+
+                while (a <= b) {
+                    int m = a + (b - a) / 2;
+
+                    int leftGcd = gcd(
+                        preAt(r - 1),
+                        rangeGcd(r + 1, m - 1)
+                    );
+
+                    if (leftGcd <= sufAt(m)) {
+                        c1 = m;
+                        b = m - 1;
+                    } else {
+                        a = m + 1;
+                    }
+                }
+
+                a = lo;
+                b = hi;
+                int c2 = lo - 1;
+
+                while (a <= b) {
+                    int m = a + (b - a) / 2;
+
+                    int leftGcd = gcd(
+                        preAt(r - 1),
+                        rangeGcd(r + 1, m - 1)
+                    );
+
+                    if (leftGcd >= sufAt(m)) {
+                        c2 = m;
+                        a = m + 1;
+                    } else {
+                        b = m - 1;
+                    }
+                }
+
+                if (c1 <= c2) {
+                    cnt += c2 - c1 + 1;
+                }
+            }
+
+            // Split directly around the removed element
+            if (r >= 1 && r <= n - 2) {
+                if (preAt(r - 1) == sufAt(r + 1)) {
+                    cnt++;
+                }
+            }
+
+            best = Math.max(best, cnt);
+        }
+
+        return best;
+    }
+}
+*****************************************************************************
+question number 4035. Maximum Valid Split Positions I
+class Solution {
+    public int maxValidSplits(int[] nums) {
+        int n = nums.length;
+        int ans = 0;
+        for (int remove = -1; remove < n; remove++) {
+            int m = n - (remove == -1 ? 0 : 1);
+            if (m < 2)
+                continue;
+            int[] arr = new int[m];
+            int k = 0;
+            for (int i = 0; i < n; i++) {
+                if (i == remove)
+                    continue;
+                arr[k++] = nums[i];
+            }
+            int[] prefix = new int[m];
+            int[] suffix = new int[m];
+            prefix[0] = arr[0];
+            suffix[m - 1] = arr[m - 1];
+            for (int i = 1; i < m; i++) {
+                prefix[i] = gcd(prefix[i - 1], arr[i]);
+            }
+            for (int i = m - 2; i >= 0; i--) {
+                suffix[i] = gcd(suffix[i + 1], arr[i]);
+            }
+            int score = 0;
+            for (int i = 0; i < m - 1; i++) {
+                if (prefix[i] == suffix[i + 1]) {
+                    score++;
+                }
+            }
+            ans = Math.max(ans, score);
+        }
+        return ans;
+    }
+
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+}
+*****************************************************************************
+question number 4036. Lexicographically Largest String After Pair Transformations
+class Solution {
+    public String[] largestString(int[] nums) {
+        String[] ans = new String[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            int x = nums[i];
+            StringBuilder sb = new StringBuilder();
+            char ch = 'a';
+            while (x > 0 && ch < 'z') {
+                if (x % 2 == 1)
+                    sb.append(ch);
+                x /= 2;
+                ch++;
+            }
+            while (x > 0) {
+                sb.append('z');
+                x--;
+            }
+            ans[i] = sb.reverse().toString();
+        }
+        return ans;
+    }
+}
+*****************************************************************************
+quesrtion number 4034. Minimum Bishop Moves to Reach Target
+class Solution {
+    public int minBishopMoves(int[] source, int[] target) {
+        int sr = source[0];
+        int sc = source[1];
+        int tr = target[0];
+        int tc = target[1];
+        if(sr == tr && sc == tc){
+            return 0;
+        }
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[9][9];
+        queue.offer(new int[]{sr, sc, 0});
+        visited[sr][sc] = true;
+        int[][] dirs = {
+            {1, 1},
+            {1, -1},
+            {-1, 1},
+            {-1, -1}
+        };
+        while(!queue.isEmpty()){
+            int[] curr = queue.poll();
+            int x = curr[0];
+            int y = curr[1];
+            int moves = curr[2];
+            if(x == tr && y == tc){
+                return moves;
+            }
+            for(int[] dir : dirs) {
+                int nx = x + dir[0];
+                int ny = y + dir[1];
+                while(nx >= 1 && nx <= 8 && ny >= 1 && ny <= 8){
+                    if(!visited[nx][ny]){
+                        visited[nx][ny] = true;
+                        queue.offer(new int[]{nx, ny, moves + 1});
+                    }
+                    nx += dir[0];
+                    ny += dir[1];
+                }
+            }
+        }
+        return -1;
+    }
+}
+there is one more optimal solution 
+
 ****************************************************************************
 question number 98. Vlaidate the Binary Search Tree
 class Solution {
