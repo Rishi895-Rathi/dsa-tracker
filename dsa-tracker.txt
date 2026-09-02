@@ -1,3 +1,22 @@
+question number 
+*****************************************************************************
+question numer 3875. Construct Uniform Parity Array I
+class Solution {
+    public boolean uniformArray(int[] nums1) {
+        //approach one 
+        //return true;
+        
+        //approach two
+        for(int i = 0; i < nums1.length; i++){
+            if((nums1[i] % 2) != 0){
+                return true;
+                //cause one odd element can make the whole array odd 
+            }
+        }
+        return true;
+    }
+}
+*****************************************************************************
 question number 3568. Minimum Moves to Clean the Classroom
 class Solution {
     public int minMoves(String[] classroom, int energy) {
