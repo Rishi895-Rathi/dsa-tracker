@@ -1,6 +1,39 @@
 question number 
 *****************************************************************************
-question number 
+question number 905 Sort By Parity 
+class Solution {
+    public int[] sortArrayByParity(int[] nums) {
+        int[] ans = new int[nums.length];
+
+        int left = 0;
+        int right = nums.length - 1;
+
+        for (int num : nums) {
+            if ((num & 1) == 0) {
+                ans[left++] = num;
+            } else {
+                ans[right--] = num;
+            }
+        }
+
+        return ans;
+    }
+} 
+//approach two return the same array numns
+class Solution {
+    public int[] sortArrayByParity(int[] nums) {
+        int left = 0;
+       for(int right = 0; right< nums.length; right++){
+           if(nums[right] % 2 == 0){
+            int temp = nums[right];
+            nums[right] = nums[left];
+            nums[left] = temp;
+            left++;
+           }
+        }
+        return nums;
+    }
+}
 *****************************************************************************
 question number 96. Unique Binary Search Trees
 class Solution {
