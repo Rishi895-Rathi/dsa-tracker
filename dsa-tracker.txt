@@ -2,6 +2,30 @@ question number
 *****************************************************************************
 question number 
 *****************************************************************************
+question number 96. Unique Binary Search Trees
+class Solution {
+    int[][] dp;
+    public int numTrees(int n) {
+        dp = new int[n + 2][n + 2];
+        return solve(1, n);
+    }
+    private int solve(int s, int e) {
+        if(s > e){
+            return 1;
+        }
+        if(dp[s][e] != 0){
+            return dp[s][e];
+        }
+        int count = 0;
+        for(int i = s; i <= e; i++){
+            int left = solve(s, i - 1);
+            int right = solve(i + 1, e);
+            count += left * right;
+        }
+        return dp[s][e] = count;
+    }
+}
+*****************************************************************************
 question number 95. Unique Binary Search Trees II 
 class Solution {
     public List<TreeNode> generateTrees(int n) {
