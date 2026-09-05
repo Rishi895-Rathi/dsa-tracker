@@ -1,4 +1,176 @@
-question number
+question number 
+*****************************************************************************
+question number 4027. Elevator Request III
+class Solution {
+    public long elevatorRequests(int n, int start, int[][] requests) {
+        int m = requests.length;
+
+        if(m == 0) return 0;
+
+        int totalMasks = 1 << m;
+        long INF = Long.MAX_VALUE / 4;
+        long[][] dp = new long[totalMasks][m];
+        for(int mask = 0; mask < totalMasks; mask++){
+            Arrays.fill(dp[mask], INF);
+        }
+        for(int i = 0; i < m; i++){
+            int arrival = requests[i][0];
+            int floor = requests[i][1];
+            long travelTime = Math.abs(start - floor);
+            dp[1 << i][i] = Math.max(travelTime, (long) arrival);
+        }
+        for(int mask = 1; mask < totalMasks; mask++){
+            for(int last = 0; last < m; last++){
+                if((mask & (1 << last)) == 0){
+                    continue;
+                }
+                if(dp[mask][last] == INF){
+                    continue;
+                }
+                long currentTime = dp[mask][last];
+                int currentFloor = requests[last][1];
+                for(int next = 0; next < m; next++){
+                    if((mask & (1 << next)) != 0){
+                        continue;
+                    }
+                    int nextFloor = requests[next][1];
+                    int arrival = requests[next][0];
+                    long distance = Math.abs(currentFloor - nextFloor);
+                    long reachTime = currentTime + distance;
+                    long finishTime = Math.max(reachTime, (long) arrival);
+                    int newMask = mask | (1 << next);
+                    dp[newMask][next] = Math.min(dp[newMask][next], finishTime);
+                }
+            }
+        }
+        int fullMask = totalMasks - 1;
+        long answer = INF;
+
+        for (int last = 0; last < m; last++) {
+            answer = Math.min(answer, dp[fullMask][last]);
+        }
+
+        return answer;
+    }
+}
+*****************************************************************************
+question number 4026. Maimum Gao Between Station
+class Solution {
+    public int maximumGap(String skill, String station) {
+        int n = skill.length();
+        int m = station.length();
+        
+        if(n == 1) return 0;
+        int[] left = new int[n];
+        int[] right = new int[n];
+        
+        int p = 0;
+        for(int i = 0; i < n; i++){
+            while(station.charAt(p) != skill.charAt(i)){
+                p++;
+            }
+            left[i] = p;
+            p++;
+        }
+        p = m - 1;
+        for(int i = n - 1; i >= 0; i--){
+            while(station.charAt(p) != skill.charAt(i)){
+                p--;
+            }
+            right[i] = p;
+            p--;
+        }
+        int ans = 0;
+        for(int i = 0; i < n - 1; i++){
+            ans = Math.max(ans, right[i + 1] - left[i]);
+        }
+        return ans;
+    }
+}
+*****************************************************************************
+question number 4025. Minimize the Maximum Waiting Time at Synchronized TRaffic Lights
+class Solution {
+    public int minPenalty(int period, int[] lights, int[] arrivalTime) {
+        int maxGreen = 0;
+        for(int g : lights){
+            maxGreen = Math.max(maxGreen, g);
+        }
+        int penalty = 0;
+        for(int t : arrivalTime){
+            int r = t % period;
+            if(r >= maxGreen){
+                penalty = Math.max(penalty, period - r);
+            }
+        }
+        return penalty;
+    }
+}
+*******************************************************************************************************************************************************
+question numnber 4024. Nearest Available Drone
+class Solution {
+    public int nearestDrone(int[][] drones, int[] target) {
+        int tx = target[0];
+        int ty = target[1];
+        int ans = -1;
+        int minDist = Integer.MAX_VALUE;
+        for(int i = 0; i < drones.length; i++){
+            int x = drones[i][0];
+            int y = drones[i][1];
+            int range = drones[i][2];
+            int dist = Math.abs(x - tx) + Math.abs(y - ty);
+            if(dist <= range){ 
+                if(dist < minDist){
+                    minDist = dist;
+                    ans = i;
+                }
+            }
+        }
+        return ans;
+    }
+}
+***************************************************************************
+question number 3904. Smallest Stable Index II
+// class Solution {
+//     public int firstStableIndex(int[] nums, int k) {
+//         int n = nums.length;
+
+//         int[] prefixMax = new int[n];
+//         int[] suffixMin = new int[n];
+
+//         prefixMax[0] = nums[0];
+//         suffixMin[n - 1] = nums[n - 1];
+//         for(int i = 1; i < n; i++){
+//             prefixMax[i] = Math.max(prefixMax[i - 1], nums[i]);
+//         }
+//         for(int i = n - 2; i >= 0; i--){
+//             suffixMin[i] = Math.min(suffixMin[i + 1], nums[i]);
+//         }
+//         for(int i = 0; i < n; i++){
+//             if(prefixMax[i] - suffixMin[i] <= k){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+
+class Solution {
+    public int firstStableIndex(int[] nums, int k) {
+        int n = nums.length;
+        int[] mini = new int[n];
+        int mint = Integer.MAX_VALUE;
+        for(int i = n - 1; i >= 0; i--){
+            if(nums[i] < mint) mint = nums[i];
+            mini[i] = mint;
+        }
+        int maxt = 0;
+        for(int i = 0; i < n; i++){
+            if(nums[i] > maxt) maxt = nums[i];
+            if(maxt - mini[i] <= k) return i;
+        }
+        return -1;
+    }
+}
 *****************************************************************************
 question number 3903. Smallest Stable Index I
 class Solution {
