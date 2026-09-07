@@ -1,5 +1,22 @@
-****************************************************************************
+*******************************************************************************
 question number 
+*******************************************************************************
+question number 940. Distinct Subsequences II
+class Solution {
+    public int distinctSubseqII(String s) {
+        long[] dp = new long[26];
+        long total = 0;
+        long mod = 1000000007;
+        for(char c : s.toCharArray()){
+            int idx = c - 'a';
+            long old = dp[idx];
+            dp[idx] = (total + 1) % mod;
+            total = (total + dp[idx] - old + mod) % mod;
+        }
+
+        return (int) total;
+    }
+}
 *****************************************************************************
 question number 115. Distinct Subsequences
 class Solution {
