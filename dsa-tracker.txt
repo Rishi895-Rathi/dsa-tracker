@@ -1,3 +1,15 @@
+*****************************************************************************
+question number 101. Symmetric Tree
+class Solution {
+    public boolean isSymmetric(TreeNode root) {
+        return check(root, root);
+    }
+
+    private boolean check(TreeNode a, TreeNode b){
+        if (a == null || b == null) return a == b;
+        return a.val == b.val && check(a.left, b.right) && check(a.right, b.left);
+    }
+}
 *******************************************************************************
 question number 3870. Count Commas in Range
 class Solution {
