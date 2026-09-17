@@ -1,4 +1,32 @@
-question number
+question number 
+*****************************************************************************
+question number 1477. Find Two Non-overlapping Sub-arrays Each With Target Sum
+class Solution {
+    public int minSumOfLengths(int[] arr, int target) {
+        int n = arr.length;
+        int[] best = new int[n];
+        Arrays.fill(best, Integer.MAX_VALUE);
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int prefix = 0;
+        int ans = Integer.MAX_VALUE;
+        int minLength = Integer.MAX_VALUE;
+        for(int i = 0; i < n; i++){
+            prefix += arr[i];
+            if(map.containsKey(prefix - target)){
+                int left = map.get(prefix - target) + 1;
+                int len = i - left + 1;
+                if(left > 0 && best[left - 1] != Integer.MAX_VALUE){
+                    ans = Math.min(ans, len + best[left - 1]);
+                }
+                minLength = Math.min(minLength, len);
+            }
+            best[i] = minLength;
+            map.put(prefix, i);
+        }
+        return ans == Integer.MAX_VALUE ? -1 : ans;
+    }
+}
 ****************************************************************************
 question number 1621. Number of Sets of K Non-Overlapping Line Segments
 class Solution {
