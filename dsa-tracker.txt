@@ -1,5 +1,67 @@
 question number 
 *****************************************************************************
+question number 1520. Maximum Number if Non-Overlapping Substrings
+class Solution {
+    public List<String> maxNumOfSubstrings(String s) {
+        int n = s.length();
+
+        int[] first = new int[26];
+        int[] last = new int[26];
+
+        Arrays.fill(first, n);
+        Arrays.fill(last, -1);
+
+        for (int i = 0; i < n; i++) {
+            int c = s.charAt(i) - 'a';
+            first[c] = Math.min(first[c], i);
+            last[c] = i;
+        }
+
+        List<int[]> valid = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            int c = s.charAt(i) - 'a';
+
+            // Only start from the first occurrence
+            if (first[c] != i) {
+                continue;
+            }
+
+            int r = last[c];
+            boolean ok = true;
+
+            for (int j = i; j <= r; j++) {
+                int x = s.charAt(j) - 'a';
+
+                if (first[x] < i) {
+                    ok = false;
+                    break;
+                }
+
+                r = Math.max(r, last[x]);
+            }
+
+            if (ok) {
+                valid.add(new int[]{i, r});
+            }
+        }
+
+        valid.sort((a, b) -> a[1] - b[1]);
+
+        List<String> ans = new ArrayList<>();
+        int end = -1;
+
+        for (int[] interval : valid) {
+            if (interval[0] > end) {
+                ans.add(s.substring(interval[0], interval[1] + 1));
+                end = interval[1];
+            }
+        }
+
+        return ans;
+    }
+} 
+*****************************************************************************
 question number 1477. Find Two Non-overlapping Sub-arrays Each With Target Sum
 class Solution {
     public int minSumOfLengths(int[] arr, int target) {
