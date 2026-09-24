@@ -1,4 +1,133 @@
-question number 
+question number
+*****************************************************************************
+question number 3414. Maximum Score of Non-overlapping Intervals
+class Solution {
+    class Result {
+        long score;
+        List<Integer> indices;
+
+        Result(long score, List<Integer> indices) {
+            this.score = score;
+            this.indices = indices;
+        }
+    }
+
+    List<int[]> arr;
+    Result[][] dp;
+
+    public int[] maximumWeight(List<List<Integer>> intervals) {
+        int n = intervals.size();
+
+        arr = new ArrayList<>();
+
+        for(int i = 0; i < n; i++){
+            arr.add(new int[]{
+                intervals.get(i).get(0),
+                intervals.get(i).get(1),
+                intervals.get(i).get(2),
+                i
+            });
+        }
+
+        arr.sort((a, b) -> {
+            if(a[0] != b[0])
+                return Integer.compare(a[0], b[0]);
+            return Integer.compare(a[1], b[1]);
+        });
+
+        dp = new Result[n][5];
+
+        Result ans = solve(0, 0);
+
+        int[] result = new int[ans.indices.size()];
+
+        for(int i = 0; i < ans.indices.size(); i++){
+            result[i] = ans.indices.get(i);
+        }
+
+        return result;
+    }
+
+    Result solve(int i, int count) {
+
+        if(i == arr.size() || count == 4){
+            return new Result(0, new ArrayList<>());
+        }
+
+        if(dp[i][count] != null){
+            return dp[i][count];
+        }
+
+        // Don't take current interval
+        Result skip = solve(i + 1, count);
+
+        // Take current interval
+        int next = findNext(i);
+
+        Result takeNext = solve(next, count + 1);
+
+        long takeScore = arr.get(i)[2] + takeNext.score;
+
+        List<Integer> takeIndices = new ArrayList<>(takeNext.indices);
+        takeIndices.add(arr.get(i)[3]);
+
+        Collections.sort(takeIndices);
+
+        Result take = new Result(takeScore, takeIndices);
+
+        dp[i][count] = better(take, skip);
+
+        return dp[i][count];
+    }
+
+    int findNext(int i) {
+
+        int end = arr.get(i)[1];
+
+        int left = i + 1;
+        int right = arr.size();
+
+        while(left < right){
+            int mid = left + (right - left) / 2;
+
+            if(arr.get(mid)[0] > end){
+                right = mid;
+            }
+            else{
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+
+    Result better(Result a, Result b) {
+
+        if(a.score > b.score){
+            return a;
+        }
+
+        if(b.score > a.score){
+            return b;
+        }
+
+        if(compare(a.indices, b.indices) < 0){
+            return a;
+        }
+
+        return b;
+    }
+    
+    int compare(List<Integer> a, List<Integer> b) {
+        int n = Math.min(a.size(), b.size());
+        for(int i = 0; i < n; i++){
+            if(!a.get(i).equals(b.get(i))){
+                return Integer.compare(a.get(i), b.get(i));
+            }
+        }
+        return Integer.compare(a.size(), b.size());
+    }
+}
 *****************************************************************************
 question number 3483. Unique 3-Digit Even Numbers 
 // class Solution {
