@@ -1,5 +1,70 @@
 question number 
+*****************************************************************************
+question number 3483. Unique 3-Digit Even Numbers 
+// class Solution {
+//     int ans = 0;
+//     public int totalNumbers(int[] digits) {
+//         int[] freq = new int[10];
+//         for(int num : digits){
+//             freq[num]++;
+//         }
+//         backtrack(freq, 0, 3);
+//         return ans;
+//     }
+//     void backtrack(int[] freq, int number, int length) {
+//         if(length == 0){
+//             if(number % 2 == 0){
+//                 ans++;
+//             }
+//             return;
+//         }
+//         for(int digit = 0; digit <= 9; digit++){
+//             if(freq[digit] == 0){
+//                 continue;
+//             }
+//             // 3-digit number cannot start with 0
+//             if(length == 3 && digit == 0){
+//                 continue;
+//             }
+//             freq[digit]--;
+//             backtrack(freq, number * 10 + digit, length - 1);
+//             freq[digit]++;
+//         }
+//     }
+// }
 
+// Appraoch two
+class Solution {
+    int ans = 0;
+    public int totalNumbers(int[] digits) {
+        int[] freq = new int[10];
+        for(int num : digits){
+            freq[num]++;
+        }
+        backtrack(freq, 0, 3);
+        return ans;
+    }
+    void backtrack(int[] freq, int number, int length) {
+        if(length == 0){
+            ans++;
+            return;
+        }
+        for(int d = 0; d <= 9; d++){
+            if(freq[d] == 0){
+                continue;
+            }
+            if(length == 1 && d % 2 != 0){
+                continue;
+            }
+            if(length == 3 && d == 0){
+                continue;
+            }
+            freq[d]--;
+            backtrack(freq, number * 10 + d, length - 1);
+            freq[d]++;
+        }
+    }
+}
 *****************************************************************************
 question number 3550. Smallest Index With Digit Sum Equal to Index
 class Solution {
