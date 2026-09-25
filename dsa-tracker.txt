@@ -1,5 +1,111 @@
 question number 
 *****************************************************************************
+question number 127. Word Ladder
+
+//approach one 
+
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (!wordList.contains(endWord)) {
+            return 0;
+        }
+
+        Set<String> used = new HashSet<>();
+        used.add(beginWord);
+
+        int ans = solve(beginWord, endWord, wordList, used);
+
+        return ans == Integer.MAX_VALUE ? 0 : ans;
+    }
+
+    public int solve(String current, String endWord, List<String> wordList, Set<String> used) {
+        if (current.equals(endWord)) {
+            return 1;
+        }
+
+        int ans = Integer.MAX_VALUE;
+
+        for (String word : wordList) {
+            if (!used.contains(word) && oneChange(current, word)) {
+                used.add(word);
+
+                int steps = solve(word, endWord, wordList, used);
+
+                if (steps != Integer.MAX_VALUE) {
+                    ans = Math.min(ans, steps + 1);
+                }
+
+                used.remove(word);
+            }
+        }
+
+        return ans;
+    }
+
+    public boolean oneChange(String a, String b) {
+        int count = 0;
+
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) != b.charAt(i)) {
+                count++;
+            }
+        }
+
+        return count == 1;
+    }
+}
+
+//approach two
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (!wordList.contains(endWord)) {
+            return 0;
+        }
+
+        Set<String> set = new HashSet<>(wordList);
+        Queue<String> queue = new LinkedList<>();
+
+        queue.add(beginWord);
+        int steps = 1;
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            for (int j = 0; j < size; j++) {
+                String current = queue.poll();
+
+                if (current.equals(endWord)) {
+                    return steps;
+                }
+
+                for (String word : set) {
+                    if (oneChange(current, word)) {
+                        queue.add(word);
+                    }
+                }
+
+                set.remove(current);
+            }
+
+            steps++;
+        }
+
+        return 0;
+    }
+
+    public boolean oneChange(String a, String b) {
+        int count = 0;
+
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) != b.charAt(i)) {
+                count++;
+            }
+        }
+
+        return count == 1;
+    }
+} 
+*****************************************************************************
 question number 1096. Brace Expansion II
 class Solution {
     public List<String> braceExpansionII(String expression) {
