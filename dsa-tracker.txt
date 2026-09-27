@@ -1,3 +1,24 @@
+question number 
+*****************************************************************************
+question number 1190. Reverse Substrings Between Each Pair of Parentheses
+class Solution {
+    public String reverseParentheses(String s) {
+        Stack<String> stack = new Stack<>();
+        StringBuilder curr = new StringBuilder();
+        for(char c : s.toCharArray()){
+            if(c == '('){
+                stack.push(curr.toString());
+                curr = new StringBuilder();
+            }else if (c == ')'){
+                curr.reverse();
+                curr.insert(0, stack.pop());
+            }else{
+                curr.append(c);
+            }
+        }
+        return curr.toString();
+    }
+}
 *****************************************************************************
 question number 605. Can Place Flowers
 class Solution {
