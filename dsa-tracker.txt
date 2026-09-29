@@ -1,4 +1,75 @@
-question number
+question number 
+*****************************************************************************
+question number 2267. Check if There Is a Valid Parentheses String Path
+class Solution {
+    Boolean[][][] dp;
+    int m , n;
+
+    public boolean hasValidPath(char[][] grid) {
+        m = grid.length;
+        n = grid[0].length;
+
+        if((m + n - 1) % 2 == 1){
+            return false;
+        }
+        dp = new Boolean[m][n][m + n];
+        return dfs(grid, 0, 0, 0);
+    }
+
+    private boolean dfs(char[][] grid, int i, int j, int balance){
+        if(grid[i][j] == '('){
+            balance++;
+        }
+        else{
+            balance--;
+        }
+        if(balance < 0){
+            return false;
+        }
+        if(i == m - 1 && j == n - 1){
+            return balance == 0;
+        }
+        if(dp[i][j][balance] != null){
+            return dp[i][j][balance];
+        }
+        boolean ans = false;
+        if(i + 1 < m){
+            ans = dfs(grid, i + 1, j, balance);
+        }
+        if(!ans && j + 1 < n){
+            ans = dfs(grid, i, j + 1, balance);
+        }
+        return dp[i][j][balance] = ans;
+    }
+}
+        //brute force 
+        
+    //     int m=grid.length;
+    //     int n=grid[0].length;
+    //     if((m+n-1)%2!=0) return false;
+    //     return dfs(grid,0,0,0);
+    // }
+
+    // public boolean dfs(char[][] grid,int i,int j,int balance){
+    //     if(grid[i][j]=='('){
+    //         balance++;
+    //     }else{
+    //         balance--;
+    //     }
+    //     if(balance<0) return false;
+    //     int remaining=(grid.length-1-i)+(grid[0].length-1-j);
+    //     if(balance>remaining) return false;
+    //     if(i==grid.length-1 && j==grid[0].length-1){
+    //         return balance==0;
+    //     }
+    //     if(i+1<grid.length && dfs(grid,i+1,j,balance)){
+    //         return true;
+    //     }
+    //     if(j+1<grid[0].length && dfs(grid,i,j+1,balance)){
+    //         return true;
+    //     }
+    //     return false;
+
 *****************************************************************************
 question number 1401. Circle and Rectangle Overlapping
 class Solution {
