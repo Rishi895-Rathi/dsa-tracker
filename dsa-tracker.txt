@@ -1,4 +1,26 @@
-question number 
+question number
+******************************************************************************
+question number 1111. Maximum Nesting Depth of Two Valid Parentheses Strings
+class Solution {
+    public int[] maxDepthAfterSplit(String seq) {
+        int[] ans = new int[seq.length()];
+        Stack<Character> stack = new Stack<>();
+
+        for(int i = 0; i < seq.length(); i++) {
+            char c = seq.charAt(i);
+
+            if(c == '(') {
+                stack.push(c);
+                ans[i] = stack.size() % 2;
+            } else {
+                ans[i] = stack.size() % 2;
+                stack.pop();
+            }
+        }
+
+        return ans;
+    }
+} 
 *****************************************************************************
 question number 2267. Check if There Is a Valid Parentheses String Path
 class Solution {
