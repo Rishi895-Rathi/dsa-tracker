@@ -1,4 +1,32 @@
-question number
+question number 
+*****************************************************************************
+question number 151. Reverse Words in a String
+class Solution {
+    public String reverseWords(String s) {
+        StringBuilder ans = new StringBuilder();
+        StringBuilder word = new StringBuilder();
+        for(int i = s.length() - 1; i >= 0; i--){
+            if(s.charAt(i) != ' '){
+                word.append(s.charAt(i));
+            }else if(word.length() > 0){
+                word.reverse();
+                if(ans.length() > 0){
+                    ans.append(' ');
+                }
+                ans.append(word);
+                word.setLength(0);
+            }
+        }
+        if(word.length() > 0){
+            word.reverse();
+            if(ans.length() > 0){
+                ans.append(' ');
+            }
+            ans.append(word);
+        }
+        return ans.toString();
+    }
+}
 ******************************************************************************
 question number 1111. Maximum Nesting Depth of Two Valid Parentheses Strings
 class Solution {
