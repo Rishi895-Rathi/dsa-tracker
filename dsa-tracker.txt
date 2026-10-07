@@ -1,4 +1,113 @@
 question number 
+*****************************************************************************
+question number 301. Remove Invalid Parentheses
+//approach one class Solution {
+    Set<String> result = new HashSet<>();
+
+    public List<String> removeInvalidParentheses(String s) {
+        int left = 0;
+        int right = 0;
+
+        for (char ch : s.toCharArray()) {
+            if (ch == '(') {
+                left++;
+            } else if (ch == ')') {
+                if (left > 0) {
+                    left--;
+                } else {
+                    right++;
+                }
+            }
+        }
+
+        int maxLength = s.length() - left - right;
+
+        solve(s, 0, "", 0, maxLength);
+
+        return new ArrayList<>(result);
+    }
+
+    void solve(String s, int index, String current, int count, int maxLength) {
+        if (count < 0 || current.length() > maxLength) {
+            return;
+        }
+
+        if (index == s.length()) {
+            if (count == 0 && current.length() == maxLength) {
+                result.add(current);
+            }
+            return;
+        }
+
+        char ch = s.charAt(index);
+
+        if (ch == '(' || ch == ')') {
+
+            // remove
+            solve(s, index + 1, current, count, maxLength);
+
+            // keep
+            if (ch == '(') {
+                solve(s, index + 1, current + ch, count + 1, maxLength);
+            } else {
+                if (count > 0) {
+                    solve(s, index + 1, current + ch, count - 1, maxLength);
+                }
+            }
+
+        } else {
+            solve(s, index + 1, current + ch, count, maxLength);
+        }
+    }
+}
+
+//approach two
+class Solution {
+    Set<String> result = new HashSet<>();
+    int minRemove = Integer.MAX_VALUE;
+    public List<String> removeInvalidParentheses(String s){
+        solve(s, 0, "", 0, 0);
+        return new ArrayList<>(result);
+    }
+
+    void solve(String s, int index, String current, int count, int removals) {
+        if(count < 0){
+            return;
+        }
+        if(index == s.length()){
+            if(count == 0){
+
+                if(removals < minRemove){
+                    minRemove = removals;
+                    result.clear();
+                    result.add(current);
+                }else if (removals == minRemove){
+                    result.add(current);
+                }
+            }
+            return;
+        }
+
+        char ch = s.charAt(index);
+
+        if(ch == '(' || ch == ')'){
+
+            // remove
+            solve(s, index + 1, current, count, removals + 1);
+
+            // keep
+            if(ch == '('){
+                solve(s, index + 1, current + ch, count + 1, removals);
+            }else{
+                if(count > 0){
+                    solve(s, index + 1, current + ch, count - 1, removals);
+                }
+            }
+        }else{
+            solve(s, index + 1, current + ch, count, removals);
+        }
+    }
+}
 ****************************************************************************
 question number 856. Score of Parentheses
 class Solution {
