@@ -1,5 +1,26 @@
 question number 
 *****************************************************************************
+question number 1021. Remove Outermost Parentheses
+class Solution {
+    public String removeOuterParentheses(String s) {
+        StringBuilder result = new StringBuilder();
+        int left = 0;
+        int depth = 0;
+        for(int right = 0; right < s.length(); right++){
+            if(s.charAt(right) == '('){
+                depth++;
+            }else{
+                depth--;
+            }
+            if(depth == 0){
+                result.append(s.substring(left + 1, right));
+                left = right + 1;
+            }
+        }
+        return result.toString();
+    }
+}
+*****************************************************************************
 question number 301. Remove Invalid Parentheses
 //approach one class Solution {
     Set<String> result = new HashSet<>();
