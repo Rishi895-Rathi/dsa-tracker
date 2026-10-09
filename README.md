@@ -29,6 +29,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 ## Hash Table
@@ -48,4 +49,5 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 <!---LeetCode Topics End-->
