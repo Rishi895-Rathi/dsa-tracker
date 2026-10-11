@@ -33,6 +33,7 @@ Contains topicwise list of solved problems.
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+| [2778-sum-of-squares-of-special-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -58,4 +59,8 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 <!---LeetCode Topics End-->
