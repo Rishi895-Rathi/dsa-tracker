@@ -24,10 +24,26 @@ class Solution {
 
         //Newton"s method 
 
-        long guess = x;
-        while(guess * guess > x){
-            guess = (guess + (x / guess))/2;
-        }        
+        // long guess = x;
+        // while(guess * guess > x){
+        //     guess = (guess + (x / guess))/2;
+        // }        
+
+        //binary search
+
+        long low = 0;
+        long high = x;
+        long guess = 0;
+
+        while(low <= high){
+            long mid = low + (high - low) / 2;
+            if(mid * mid <= x){
+                guess = mid;
+                low = mid + 1;
+            }else{
+                high = mid - 1;
+            }
+        }
         return (int) guess;
     }
 }
