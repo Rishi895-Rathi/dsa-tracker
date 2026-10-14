@@ -22,6 +22,7 @@ Contains topicwise list of solved problems.
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [3723-maximize-sum-of-squares-of-digits](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
@@ -81,4 +82,8 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3723-maximize-sum-of-squares-of-digits](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
 <!---LeetCode Topics End-->
