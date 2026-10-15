@@ -32,6 +32,7 @@ Contains topicwise list of solved problems.
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
@@ -44,6 +45,7 @@ Contains topicwise list of solved problems.
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
@@ -102,4 +104,16 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 <!---LeetCode Topics End-->
