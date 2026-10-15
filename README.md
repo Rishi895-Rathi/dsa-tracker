@@ -39,6 +39,7 @@ Contains topicwise list of solved problems.
 | [2778-sum-of-squares-of-special-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -46,6 +47,7 @@ Contains topicwise list of solved problems.
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -92,4 +94,12 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0069-sqrtx/) | Easy |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 <!---LeetCode Topics End-->
