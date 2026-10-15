@@ -33,6 +33,7 @@ Contains topicwise list of solved problems.
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0047-permutations-ii/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
@@ -58,6 +59,7 @@ Contains topicwise list of solved problems.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0047-permutations-ii/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2784-check-if-array-is-good/) | Easy |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
@@ -120,6 +122,7 @@ Contains topicwise list of solved problems.
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0047-permutations-ii/) | Medium |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
