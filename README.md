@@ -15,6 +15,7 @@ Contains topicwise list of solved problems.
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
@@ -39,6 +40,7 @@ Contains topicwise list of solved problems.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
+| [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
@@ -175,6 +177,7 @@ Contains topicwise list of solved problems.
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 <!---LeetCode Topics End-->
