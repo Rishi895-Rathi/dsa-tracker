@@ -11,11 +11,13 @@ Contains topicwise list of solved problems.
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
+| [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
+| [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -174,4 +176,5 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
+| [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 <!---LeetCode Topics End-->
