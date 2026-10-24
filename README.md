@@ -8,6 +8,7 @@ Contains topicwise list of solved problems.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0394-decode-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0394-decode-string/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
@@ -64,6 +65,7 @@ Contains topicwise list of solved problems.
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
@@ -202,5 +204,6 @@ Contains topicwise list of solved problems.
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 <!---LeetCode Topics End-->
