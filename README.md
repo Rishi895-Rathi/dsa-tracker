@@ -47,6 +47,7 @@ Contains topicwise list of solved problems.
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2089-find-target-indices-after-sorting-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
@@ -170,6 +171,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
+| [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -178,6 +180,7 @@ Contains topicwise list of solved problems.
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 ## Binary Search Tree
 | Problem Name | Difficulty |
@@ -198,6 +201,7 @@ Contains topicwise list of solved problems.
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
@@ -210,4 +214,8 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 <!---LeetCode Topics End-->
