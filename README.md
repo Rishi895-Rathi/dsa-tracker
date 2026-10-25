@@ -120,11 +120,13 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+| [0206-reverse-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0206-reverse-linked-list/) | Easy |
 | [0328-odd-even-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0328-odd-even-linked-list/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+| [0206-reverse-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0206-reverse-linked-list/) | Easy |
 | [0394-decode-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0394-decode-string/) | Medium |
 ## Math
 | Problem Name | Difficulty |
