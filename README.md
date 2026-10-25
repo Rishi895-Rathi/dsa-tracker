@@ -11,6 +11,7 @@ Contains topicwise list of solved problems.
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0394-decode-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0394-decode-string/) | Medium |
+| [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
@@ -28,6 +29,7 @@ Contains topicwise list of solved problems.
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
@@ -225,6 +227,7 @@ Contains topicwise list of solved problems.
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
 | [0933-number-of-recent-calls](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0933-number-of-recent-calls/) | Easy |
 ## Data Stream
 | Problem Name | Difficulty |
