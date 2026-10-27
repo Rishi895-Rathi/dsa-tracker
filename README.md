@@ -160,12 +160,14 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Backtracking
@@ -226,6 +228,7 @@ Contains topicwise list of solved problems.
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Design
