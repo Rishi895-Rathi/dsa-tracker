@@ -65,6 +65,7 @@ Contains topicwise list of solved problems.
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
 | [3886-sum-of-sortable-integers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
 ## Hash Table
@@ -117,6 +118,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -189,6 +191,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -217,6 +220,7 @@ Contains topicwise list of solved problems.
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
