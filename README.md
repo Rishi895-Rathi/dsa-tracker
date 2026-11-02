@@ -52,6 +52,7 @@ Contains topicwise list of solved problems.
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [0495-teemo-attacking](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0495-teemo-attacking/) | Easy |
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
@@ -243,6 +244,7 @@ Contains topicwise list of solved problems.
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0495-teemo-attacking](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0495-teemo-attacking/) | Easy |
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
