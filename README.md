@@ -136,6 +136,7 @@ Contains topicwise list of solved problems.
 | [0025-reverse-nodes-in-k-group](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
 | [0206-reverse-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0206-reverse-linked-list/) | Easy |
 | [0328-odd-even-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0328-odd-even-linked-list/) | Medium |
+| [0725-split-linked-list-in-parts](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0725-split-linked-list-in-parts/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
