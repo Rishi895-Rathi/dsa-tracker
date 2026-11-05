@@ -187,6 +187,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
@@ -198,6 +199,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
@@ -271,6 +273,7 @@ Contains topicwise list of solved problems.
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
@@ -307,4 +310,12 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
+## Binary Lifting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+## Lowest Common Ancestor
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 <!---LeetCode Topics End-->
