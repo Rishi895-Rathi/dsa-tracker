@@ -187,6 +187,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
@@ -199,6 +200,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
@@ -214,6 +216,7 @@ Contains topicwise list of solved problems.
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
@@ -273,6 +276,7 @@ Contains topicwise list of solved problems.
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
