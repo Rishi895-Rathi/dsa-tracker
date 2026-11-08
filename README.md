@@ -55,6 +55,7 @@ Contains topicwise list of solved problems.
 | [0495-teemo-attacking](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0495-teemo-attacking/) | Easy |
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
@@ -227,6 +228,7 @@ Contains topicwise list of solved problems.
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Dynamic Programming
@@ -242,6 +244,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Binary Search Tree
@@ -264,6 +267,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 | [3665-twisted-mirror-path-count](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3665-twisted-mirror-path-count/) | Medium |
@@ -291,6 +295,7 @@ Contains topicwise list of solved problems.
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -332,4 +337,8 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1267-count-servers-that-communicate/) | Medium |
 <!---LeetCode Topics End-->
