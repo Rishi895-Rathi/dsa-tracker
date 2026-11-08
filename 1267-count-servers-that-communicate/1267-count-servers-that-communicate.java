@@ -33,41 +33,68 @@
 
 // approach two – dfs
 
+// class Solution {
+//     int m,n;
+//     int count;
+//     public int countServers(int[][] grid) {
+//         m = grid.length;
+//         n = grid[0].length;
+//         boolean[][] vis = new boolean[m][n];
+//         count = 0;
+//         for(int i = 0; i < m; i++){
+//             for(int j = 0; j < n; j++){
+//                 if(grid[i][j] == 1 && !vis[i][j]){
+//                     int size = dfs(grid,i,j,vis);
+//                     if(size > 1){
+//                         count += size;
+//                     }
+//                 }
+//             }
+//         }
+//         return count;
+//     }
+
+//     public int dfs(int[][] grid,int i,int j,boolean[][] vis){
+//         vis[i][j] = true;
+//         int size = 1;
+//         for(int k = 0; k < n; k++){
+//             if(grid[i][k] == 1 && !vis[i][k]){
+//                 size += dfs(grid,i,k,vis);
+//             }
+//         }
+//         for(int k = 0; k < m; k++){
+//             if(grid[k][j] == 1 && !vis[k][j]){
+//                 size += dfs(grid,k,j,vis);
+//             }
+//         }
+
+//         return size;
+//     }
+// }
+
+//approach three 
 class Solution {
-    int m,n;
-    int count;
     public int countServers(int[][] grid) {
-        m = grid.length;
-        n = grid[0].length;
-        boolean[][] vis = new boolean[m][n];
-        count = 0;
+        int m = grid.length;
+        int n = grid[0].length;
+        int[] row = new int[m];
+        int[] col = new int[n];
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                if(grid[i][j] == 1 && !vis[i][j]){
-                    int size = dfs(grid,i,j,vis);
-                    if(size > 1){
-                        count += size;
-                    }
+                if(grid[i][j] == 1){
+                    row[i]++;
+                    col[j]++;
+                }
+            }
+        }
+        int count = 0;
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                if(grid[i][j] == 1 && (row[i] > 1 || col[j] > 1)){
+                    count++;
                 }
             }
         }
         return count;
-    }
-
-    public int dfs(int[][] grid,int i,int j,boolean[][] vis){
-        vis[i][j] = true;
-        int size = 1;
-        for(int k = 0; k < n; k++){
-            if(grid[i][k] == 1 && !vis[i][k]){
-                size += dfs(grid,i,k,vis);
-            }
-        }
-        for(int k = 0; k < m; k++){
-            if(grid[k][j] == 1 && !vis[k][j]){
-                size += dfs(grid,k,j,vis);
-            }
-        }
-
-        return size;
     }
 }
