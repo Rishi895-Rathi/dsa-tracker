@@ -23,6 +23,7 @@ Contains topicwise list of solved problems.
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0394-decode-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0394-decode-string/) | Medium |
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
@@ -198,6 +199,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0144-binary-tree-preorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
@@ -212,6 +214,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0144-binary-tree-preorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
@@ -296,6 +299,7 @@ Contains topicwise list of solved problems.
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
