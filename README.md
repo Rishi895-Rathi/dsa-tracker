@@ -170,6 +170,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0069-sqrtx/) | Easy |
 | [0168-excel-sheet-column-title](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0168-excel-sheet-column-title/) | Easy |
+| [0172-factorial-trailing-zeroes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0172-factorial-trailing-zeroes/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
