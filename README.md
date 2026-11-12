@@ -9,6 +9,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
+| [0168-excel-sheet-column-title](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0168-excel-sheet-column-title/) | Easy |
 | [0301-remove-invalid-parentheses](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0394-decode-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0394-decode-string/) | Medium |
 | [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
@@ -168,6 +169,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0069-sqrtx/) | Easy |
+| [0168-excel-sheet-column-title](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0168-excel-sheet-column-title/) | Easy |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
