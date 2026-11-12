@@ -92,6 +92,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
@@ -153,6 +154,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0025-reverse-nodes-in-k-group](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0206-reverse-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0206-reverse-linked-list/) | Easy |
 | [0328-odd-even-linked-list](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0328-odd-even-linked-list/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0725-split-linked-list-in-parts/) | Medium |
@@ -344,6 +346,7 @@ Contains topicwise list of solved problems.
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 ## Binary Lifting
 | Problem Name | Difficulty |
