@@ -214,6 +214,7 @@ Contains topicwise list of solved problems.
 | [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
@@ -230,6 +231,7 @@ Contains topicwise list of solved problems.
 | [0199-binary-tree-right-side-view](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0437-path-sum-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0437-path-sum-iii/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0872-leaf-similar-trees](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0872-leaf-similar-trees/) | Easy |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1161-maximum-level-sum-of-a-binary-tree/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
@@ -271,6 +273,7 @@ Contains topicwise list of solved problems.
 ## Binary Search Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0450-delete-node-in-a-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 ## Memoization
 | Problem Name | Difficulty |
