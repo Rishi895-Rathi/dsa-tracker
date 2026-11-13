@@ -32,6 +32,7 @@ Contains topicwise list of solved problems.
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -78,6 +79,7 @@ Contains topicwise list of solved problems.
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -198,6 +200,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3841-palindromic-path-queries-in-a-tree/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -310,6 +313,7 @@ Contains topicwise list of solved problems.
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -336,6 +340,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
 | [0933-number-of-recent-calls](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0933-number-of-recent-calls/) | Easy |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 ## Data Stream
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -373,4 +378,12 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
+## Monotonic Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 <!---LeetCode Topics End-->
