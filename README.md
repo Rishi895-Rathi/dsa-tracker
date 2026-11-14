@@ -79,6 +79,7 @@ Contains topicwise list of solved problems.
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
+| [3364-minimum-positive-sum-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
@@ -114,6 +115,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
+| [3364-minimum-positive-sum-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -313,6 +315,7 @@ Contains topicwise list of solved problems.
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3364-minimum-positive-sum-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Depth-First Search
