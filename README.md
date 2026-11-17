@@ -20,6 +20,7 @@ Contains topicwise list of solved problems.
 | [2243-calculate-digit-sum-of-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 | [2409-count-days-spent-together](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2409-count-days-spent-together/) | Easy |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3841-palindromic-path-queries-in-a-tree/) | Hard |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3863-minimum-operations-to-sort-a-string/) | Medium |
 | [3970-shortest-path-with-at-most-k-consecutive-identical-characters](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) | Medium |
@@ -269,6 +270,7 @@ Contains topicwise list of solved problems.
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3665-twisted-mirror-path-count](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3665-twisted-mirror-path-count/) | Medium |
 | [3693-climbing-stairs-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3693-climbing-stairs-ii/) | Medium |
@@ -371,6 +373,7 @@ Contains topicwise list of solved problems.
 | ------- | ------- |
 | [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 ## Binary Lifting
 | Problem Name | Difficulty |
 | ------- | ------- |
