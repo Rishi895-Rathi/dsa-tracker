@@ -105,6 +105,7 @@ Contains topicwise list of solved problems.
 | [0030-substring-with-concatenation-of-all-words](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
+| [0202-happy-number](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0202-happy-number/) | Easy |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0599-minimum-index-sum-of-two-lists/) | Easy |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -186,6 +187,7 @@ Contains topicwise list of solved problems.
 | [0069-sqrtx](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0069-sqrtx/) | Easy |
 | [0168-excel-sheet-column-title](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0168-excel-sheet-column-title/) | Easy |
 | [0172-factorial-trailing-zeroes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0172-factorial-trailing-zeroes/) | Medium |
+| [0202-happy-number](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0202-happy-number/) | Easy |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
@@ -376,6 +378,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0160-intersection-of-two-linked-lists](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
+| [0202-happy-number](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0202-happy-number/) | Easy |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 ## Binary Lifting
@@ -402,4 +405,8 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
+## Floyd's Cycle Finding Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0202-happy-number](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0202-happy-number/) | Easy |
 <!---LeetCode Topics End-->
