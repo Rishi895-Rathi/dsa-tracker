@@ -76,6 +76,7 @@ Contains topicwise list of solved problems.
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
 | [1882-process-tasks-using-servers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1882-process-tasks-using-servers/) | Medium |
 | [2089-find-target-indices-after-sorting-array](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
