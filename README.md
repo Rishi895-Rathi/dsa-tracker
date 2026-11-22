@@ -17,6 +17,7 @@ Contains topicwise list of solved problems.
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
+| [2042-check-if-numbers-are-ascending-in-a-sentence](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2042-check-if-numbers-are-ascending-in-a-sentence/) | Easy |
 | [2124-check-if-all-as-appears-before-all-bs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2124-check-if-all-as-appears-before-all-bs/) | Easy |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
