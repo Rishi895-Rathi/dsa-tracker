@@ -16,6 +16,7 @@ Contains topicwise list of solved problems.
 | [0649-dota2-senate](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0649-dota2-senate/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [1859-sorting-the-sentence](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1859-sorting-the-sentence/) | Easy |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 | [2042-check-if-numbers-are-ascending-in-a-sentence](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2042-check-if-numbers-are-ascending-in-a-sentence/) | Easy |
@@ -40,6 +41,7 @@ Contains topicwise list of solved problems.
 | [0735-asteroid-collision](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0735-asteroid-collision/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 ## Greedy
@@ -291,6 +293,7 @@ Contains topicwise list of solved problems.
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 | [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2911-minimum-changes-to-make-k-semi-palindromes/) | Hard |
 | [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
