@@ -99,6 +99,7 @@ Contains topicwise list of solved problems.
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3331-find-subtree-sizes-after-changes](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3331-find-subtree-sizes-after-changes/) | Medium |
 | [3364-minimum-positive-sum-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
@@ -176,6 +177,7 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2778-sum-of-squares-of-special-elements](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3886-sum-of-sortable-integers/) | Hard |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -211,6 +213,7 @@ Contains topicwise list of solved problems.
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2409-count-days-spent-together](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2409-count-days-spent-together/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
@@ -352,6 +355,7 @@ Contains topicwise list of solved problems.
 | [1871-jump-game-vii](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1871-jump-game-vii/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3364-minimum-positive-sum-subarray](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## Depth-First Search
@@ -442,4 +446,8 @@ Contains topicwise list of solved problems.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1859-sorting-the-sentence](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1859-sorting-the-sentence/) | Easy |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 <!---LeetCode Topics End-->
