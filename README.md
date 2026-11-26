@@ -216,6 +216,7 @@ Contains topicwise list of solved problems.
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2409-count-days-spent-together](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2409-count-days-spent-together/) | Easy |
+| [3360-stone-removal-game](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3360-stone-removal-game/) | Easy |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
@@ -351,6 +352,7 @@ Contains topicwise list of solved problems.
 | [2243-calculate-digit-sum-of-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2352-equal-row-and-column-pairs](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/2390-removing-stars-from-a-string/) | Medium |
+| [3360-stone-removal-game](https://github.com/Rishi895-Rathi/dsa-tracker/tree/main/3360-stone-removal-game/) | Easy |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
